@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Steve's Plumbing & Gas | Tauranga</title>
+<style>
+  html, body { margin:0; padding:0; height:100%; background:#f8f9fa; }
+  .frame-wrap { position:relative; height:100vh; height:100dvh; overflow:hidden; background:#0a1f44; }
+  iframe {
+    position:absolute; inset:0; width:100%; height:100%; border:0; background:#f8f9fa;
+    opacity:0; pointer-events:none; visibility:hidden;
+    transition:transform 640ms cubic-bezier(0.16,1,0.3,1), opacity 460ms ease, visibility 0s linear 640ms;
+    z-index:1;
+  }
+  /* Each page has a "home" position it slides back to when it isn't the active one.
+     (ID+class below intentionally outweighs the plain ID rules so .active always wins.) */
+  #frame-home { transform:translateX(-100%); }
+  #frame-book { transform:translateX(100%); }
+  iframe.active {
+    opacity:1;
+    pointer-events:auto; visibility:visible;
+    transition:transform 640ms cubic-bezier(0.16,1,0.3,1), opacity 460ms ease;
+    z-index:2;
+  }
+  #frame-home.active, #frame-book.active { transform:translateX(0); }
+  @media (prefers-reduced-motion: reduce) {
+    iframe { transition:opacity 1ms linear, visibility 0s linear; transform:none !important; }
+    iframe.active { transition:opacity 1ms linear; }
+  }
+</style>
+</head>
+<body>
+<div class="frame-wrap">
+<iframe id="frame-home" class="active" title="Home" srcdoc="<!DOCTYPE html>
+
+<html class=&quot;light scroll-smooth&quot; lang=&quot;en&quot; style=&quot;&quot;><head>
+<meta charset=&quot;utf-8&quot;/>
+<meta content=&quot;width=device-width, initial-scale=1.0&quot; name=&quot;viewport&quot;/>
+<title>Steve's Plumbing &amp;amp; Gas | Tauranga</title>
+<script src=&quot;https://cdn.tailwindcss.com?plugins=forms,container-queries&quot;></script>
+<link href=&quot;https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot;/>
+<link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;amp;family=Montserrat:wght@600;700&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot;/>
+<script id=&quot;tailwind-config&quot;>
+        tailwind.config = {
+            darkMode: &quot;class&quot;,
+            theme: {
+                extend: {
+                    &quot;colors&quot;: {
+                        &quot;on-tertiary&quot;: &quot;#ffffff&quot;,
+                        &quot;on-secondary&quot;: &quot;#ffffff&quot;,
+                        &quot;secondary-fixed&quot;: &quot;#ffdcc6&quot;,
+                        &quot;error&quot;: &quot;#ba1a1a&quot;,
+                        &quot;tertiary-container&quot;: &quot;#1b2126&quot;,
+                        &quot;surface-container-high&quot;: &quot;#e7e8e9&quot;,
+                        &quot;surface-container-lowest&quot;: &quot;#ffffff&quot;,
+                        &quot;secondary&quot;: &quot;#964900&quot;,
+                        &quot;background&quot;: &quot;#f8f9fa&quot;,
+                        &quot;primary&quot;: &quot;#00081e&quot;,
+                        &quot;on-tertiary-container&quot;: &quot;#82888f&quot;,
+                        &quot;inverse-primary&quot;: &quot;#b4c6f4&quot;,
+                        &quot;surface&quot;: &quot;#f8f9fa&quot;,
+                        &quot;surface-container-highest&quot;: &quot;#e1e3e4&quot;,
+                        &quot;outline&quot;: &quot;#75777f&quot;,
+                        &quot;tertiary&quot;: &quot;#04090e&quot;,
+                        &quot;on-primary-container&quot;: &quot;#7687b2&quot;,
+                        &quot;error-container&quot;: &quot;#ffdad6&quot;,
+                        &quot;inverse-surface&quot;: &quot;#2e3132&quot;,
+                        &quot;surface-bright&quot;: &quot;#f8f9fa&quot;,
+                        &quot;on-tertiary-fixed-variant&quot;: &quot;#41484d&quot;,
+                        &quot;on-background&quot;: &quot;#191c1d&quot;,
+                        &quot;on-tertiary-fixed&quot;: &quot;#161c21&quot;,
+                        &quot;on-primary-fixed-variant&quot;: &quot;#34466d&quot;,
+                        &quot;inverse-on-surface&quot;: &quot;#f0f1f2&quot;,
+                        &quot;primary-container&quot;: &quot;#0a1f44&quot;,
+                        &quot;primary-fixed-dim&quot;: &quot;#b4c6f4&quot;,
+                        &quot;on-error&quot;: &quot;#ffffff&quot;,
+                        &quot;on-secondary-fixed&quot;: &quot;#311300&quot;,
+                        &quot;tertiary-fixed&quot;: &quot;#dde3ea&quot;,
+                        &quot;secondary-container&quot;: &quot;#fc820c&quot;,
+                        &quot;outline-variant&quot;: &quot;#c5c6cf&quot;,
+                        &quot;on-primary-fixed&quot;: &quot;#041a3f&quot;,
+                        &quot;surface-tint&quot;: &quot;#4c5e86&quot;,
+                        &quot;secondary-fixed-dim&quot;: &quot;#ffb786&quot;,
+                        &quot;surface-container-low&quot;: &quot;#f3f4f5&quot;,
+                        &quot;on-error-container&quot;: &quot;#93000a&quot;,
+                        &quot;on-surface-variant&quot;: &quot;#44464e&quot;,
+                        &quot;on-surface&quot;: &quot;#191c1d&quot;,
+                        &quot;on-primary&quot;: &quot;#ffffff&quot;,
+                        &quot;surface-container&quot;: &quot;#edeeef&quot;,
+                        &quot;tertiary-fixed-dim&quot;: &quot;#c1c7ce&quot;,
+                        &quot;on-secondary-fixed-variant&quot;: &quot;#723600&quot;,
+                        &quot;surface-dim&quot;: &quot;#d9dadb&quot;,
+                        &quot;surface-variant&quot;: &quot;#e1e3e4&quot;,
+                        &quot;primary-fixed&quot;: &quot;#d9e2ff&quot;,
+                        &quot;on-secondary-container&quot;: &quot;#5e2c00&quot;
+                    },
+                    &quot;borderRadius&quot;: {
+                        &quot;DEFAULT&quot;: &quot;0.25rem&quot;,
+                        &quot;lg&quot;: &quot;0.5rem&quot;,
+                        &quot;xl&quot;: &quot;0.75rem&quot;,
+                        &quot;full&quot;: &quot;9999px&quot;
+                    },
+                    &quot;spacing&quot;: {
+                        &quot;base&quot;: &quot;8px&quot;,
+                        &quot;container-max&quot;: &quot;1024px&quot;,
+                        &quot;section-gap-mobile&quot;: &quot;48px&quot;,
+                        &quot;section-gap-desktop&quot;: &quot;96px&quot;,
+                        &quot;grid-gutter&quot;: &quot;16px&quot;
+                    },
+                    &quot;fontFamily&quot;: {
+                        &quot;headline-xl-mobile&quot;: [&quot;Montserrat&quot;],
+                        &quot;label-bold&quot;: [&quot;Inter&quot;],
+                        &quot;headline-xl&quot;: [&quot;Montserrat&quot;],
+                        &quot;headline-lg&quot;: [&quot;Montserrat&quot;],
+                        &quot;body-md&quot;: [&quot;Inter&quot;],
+                        &quot;body-lg&quot;: [&quot;Inter&quot;],
+                        &quot;headline-md&quot;: [&quot;Montserrat&quot;]
+                    },
+                    &quot;fontSize&quot;: {
+                        &quot;headline-xl-mobile&quot;: [&quot;26px&quot;, { &quot;lineHeight&quot;: &quot;32px&quot;, &quot;letterSpacing&quot;: &quot;-0.01em&quot;, &quot;fontWeight&quot;: &quot;700&quot; }],
+                        &quot;label-bold&quot;: [&quot;12px&quot;, { &quot;lineHeight&quot;: &quot;16px&quot;, &quot;letterSpacing&quot;: &quot;0.05em&quot;, &quot;fontWeight&quot;: &quot;600&quot; }],
+                        &quot;headline-xl&quot;: [&quot;38px&quot;, { &quot;lineHeight&quot;: &quot;48px&quot;, &quot;letterSpacing&quot;: &quot;-0.02em&quot;, &quot;fontWeight&quot;: &quot;700&quot; }],
+                        &quot;headline-lg&quot;: [&quot;26px&quot;, { &quot;lineHeight&quot;: &quot;34px&quot;, &quot;fontWeight&quot;: &quot;700&quot; }],
+                        &quot;body-md&quot;: [&quot;14px&quot;, { &quot;lineHeight&quot;: &quot;20px&quot;, &quot;fontWeight&quot;: &quot;400&quot; }],
+                        &quot;body-lg&quot;: [&quot;15px&quot;, { &quot;lineHeight&quot;: &quot;24px&quot;, &quot;fontWeight&quot;: &quot;400&quot; }],
+                        &quot;headline-md&quot;: [&quot;20px&quot;, { &quot;lineHeight&quot;: &quot;28px&quot;, &quot;fontWeight&quot;: &quot;600&quot; }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+
+        @media (prefers-reduced-motion: no-preference) {
+            /* Custom Animations */
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-8px); }
+                100% { transform: translateY(0px); }
+            }
+            .animate-float {
+                animation: float 6s ease-in-out infinite;
+            }
+            
+            .scroll-animate {
+                opacity: 0;
+                transform: translateY(40px);
+                transition: opacity 1.6s cubic-bezier(0.16, 1, 0.3, 1), transform 1.6s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+            .scroll-animate.is-visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            .scroll-animate {
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
+            .animate-float {
+                animation: none;
+            }
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        /* Horizontal-scroll carousels (mobile only -- &quot;What We Do&quot; and &quot;Reviews&quot; share
+           this exact look): hide the native scrollbar, keep it swipeable. On desktop
+           (md:) both switch back to a plain 3-column grid via Tailwind classes, so none
+           of this affects the desktop layout. */
+        .hscroll {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        .hscroll::-webkit-scrollbar {
+            display: none;
+        }
+        .carousel-dot {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 9999px;
+            background-color: #c5c6cf;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            transition: all 500ms cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .carousel-dot.active {
+            width: 18px;
+            background-color: #fc820c;
+        }
+    </style>
+</head>
+<body class=&quot;bg-background text-on-background font-body-md antialiased min-h-screen&quot;>
+<!-- Top Navigation Bar -->
+<nav class=&quot;relative shadow-md w-full sticky top-0 z-50 bg-white h-16 flex items-center&quot;>
+<div class=&quot;flex justify-between items-center w-full px-6 max-w-container-max mx-auto h-full&quot;>
+<div class=&quot;flex items-center h-full py-2&quot;>
+<img alt=&quot;Steve's Plumbing &amp;amp; Gas Logo&quot; class=&quot;h-12 w-auto object-contain&quot; src=&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAq-xAo3XhMSyk47cED8jwTHDgZXDVARtLUrhBNPOipYmkBjgTMjIGKJnqLRjepfoN7Oa-MYGcf3WyFl1GVO7D3Afi3AjR7Sq3YPnz8i-95EmRYo5Tu25rn4QvHOhTnsUFB7ckTIpvnExuEfstaK5ToMHI_k6zbyphggBOoE97zM9drjGI6ZLV4Zfeg5tGaStVKZr3vqHEinTHF4NXUxev-E0vU4c9R3u1KhWdBonQ_imwF3Rn6OEYhaSY2TmnpxcElPSFytyo7-p74Nw&quot;/>
+</div>
+<div class=&quot;hidden md:flex space-x-6 items-center&quot;>
+<a class=&quot;font-label-bold text-label-bold text-secondary border-b-2 border-secondary pb-1 transition-colors&quot; href=&quot;index.html&quot;>Home</a>
+<a class=&quot;font-label-bold text-label-bold text-primary hover:text-secondary transition-colors&quot; href=&quot;#services&quot;>Services</a>
+<a class=&quot;font-label-bold text-label-bold text-primary hover:text-secondary transition-colors&quot; href=&quot;#about&quot;>About</a>
+<a class=&quot;font-label-bold text-label-bold text-primary hover:text-secondary transition-colors&quot; href=&quot;#reviews&quot;>Reviews</a>
+<a class=&quot;font-label-bold text-label-bold text-primary hover:text-secondary transition-colors&quot; href=&quot;#quote-form&quot;>Free Quote</a>
+<a class=&quot;font-label-bold text-label-bold border border-secondary-container text-secondary-container hover:bg-secondary-container hover:text-on-secondary px-3 py-1.5 rounded-lg transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]&quot; href=&quot;book-a-job.html&quot;>Book</a>
+</div>
+<a class=&quot;hidden md:flex items-center gap-2 bg-secondary-container hover:bg-secondary text-on-secondary py-2 px-4 rounded-lg font-label-bold text-label-bold shadow-md hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group&quot; href=&quot;tel:0800427626&quot; style=&quot;background-color: rgb(230, 89, 43);&quot;>
+<span class=&quot;material-symbols-outlined icon-fill&quot;>call</span>CALL US
+        </a>
+<button class=&quot;md:hidden text-primary&quot; id=&quot;mobile-menu-toggle&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;mobile-menu&quot; aria-label=&quot;Open menu&quot;>
+<span class=&quot;material-symbols-outlined text-2xl&quot; id=&quot;mobile-menu-icon&quot;>menu</span>
+</button>
+</div>
+<div class=&quot;hidden md:hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-outline-variant/20&quot; id=&quot;mobile-menu&quot;>
+<div class=&quot;flex flex-col gap-1 px-6 py-4&quot;>
+<a class=&quot;font-label-bold text-label-bold text-secondary py-3 border-b border-outline-variant/20&quot; href=&quot;index.html&quot;>Home</a>
+<a class=&quot;font-label-bold text-label-bold text-primary hover:text-secondary transition-colors py-3 border-b border-outline-variant/20&quot; href=&quot;#services&quot;>Services</a>
+<a class=&quot;font-label-bold text-label-bold text-primary hover:text-secondary transition-colors py-3 border-b border-outline-variant/20&quot; href=&quot;#about&quot;>About</a>
+<a class=&quot;font-label-bold text-label-bold text-primary hover:text-secondary transition-colors py-3 border-b border-outline-variant/20&quot; href=&quot;#reviews&quot;>Reviews</a>
+<a class=&quot;font-label-bold text-label-bold text-primary hover:text-secondary transition-colors py-3 border-b border-outline-variant/20&quot; href=&quot;#quote-form&quot;>Free Quote</a>
+<a class=&quot;font-label-bold text-label-bold border border-secondary-container text-secondary-container hover:bg-secondary-container hover:text-on-secondary px-3 py-2.5 rounded-lg transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] text-center mt-2&quot; href=&quot;book-a-job.html&quot;>Book</a>
+<a class=&quot;flex items-center justify-center gap-2 bg-secondary-container hover:bg-secondary text-on-secondary py-2.5 px-4 rounded-lg font-label-bold text-label-bold shadow-md transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] mt-2&quot; href=&quot;tel:0800427626&quot; style=&quot;background-color: rgb(230, 89, 43);&quot;>
+<span class=&quot;material-symbols-outlined icon-fill&quot;>call</span>CALL US
+</a>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class=&quot;relative w-full min-h-screen flex flex-col justify-between items-center pt-20&quot;>
+<div class=&quot;absolute inset-0 z-0&quot;>
+<img alt=&quot;Hero background&quot; class=&quot;w-full h-full object-cover&quot; src=&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAzv2p-XM6K3uQS-3eC50K01TBpuCLpEJR3pDmH91SjPKNimTpHWsyNOWVPnp4utWYD-Ya4hRfqSkxS5X30pdiVh1mfU9pf72ChRuvqkO_SGHAi83pAbbxosoe4SgHOyhfNh8NNOn3dlZxrAsTFsyFUUzvrCA4oBJzqq1yxr0FVxZcQwaGV6-PVyjjiLnZg7t0VbUsq9BWvho22gZ4T63Xd3zjAEvVodAmeIlTkb1b0yTAe-hci9gaX00fLwP04SU7fj1boZ2Td2-rYtQ&quot;/>
+<div class=&quot;absolute inset-0 mix-blend-multiply&quot; style=&quot;background-color: rgb(0, 102, 125);&quot;></div>
+</div>
+<div class=&quot;relative z-10 max-w-container-max mx-auto px-grid-gutter w-full text-center md:text-left flex flex-col items-center md:items-start text-on-tertiary flex-grow justify-center&quot;>
+<div class=&quot;mb-6&quot;></div>
+<h1 class=&quot;font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl max-w-3xl mb-4 scroll-animate&quot;>
+            Tauranga's Trusted Plumbers, Gasfitters &amp;amp; Drainlayers
+        </h1>
+<p class=&quot;font-body-lg text-body-lg text-surface-container-high max-w-xl mb-8 scroll-animate&quot; style=&quot;transition-delay: 300ms;&quot;>
+            Fully licensed. Fast response. No cowboys.
+        </p>
+<div class=&quot;flex flex-col sm:flex-row gap-4 w-full sm:w-auto scroll-animate&quot; style=&quot;transition-delay: 600ms;&quot;>
+<a class=&quot;bg-secondary-container hover:bg-secondary text-on-tertiary px-6 py-3 rounded-DEFAULT font-label-bold text-label-bold shadow-md hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] text-center&quot; href=&quot;book-a-job.html&quot; style=&quot;background-color: rgb(230, 89, 43);&quot;>
+                Book a Job
+            </a>
+<a class=&quot;border-2 border-on-tertiary text-on-tertiary hover:bg-on-tertiary hover:text-primary px-6 py-3 rounded-DEFAULT font-label-bold text-label-bold shadow-md hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] text-center&quot; href=&quot;#quote-form&quot;>
+                Get a Free Quote
+            </a>
+</div>
+</div>
+<section class=&quot;bg-primary py-12 px-grid-gutter relative overflow-hidden w-full&quot; id=&quot;gasman&quot;>
+<div class=&quot;absolute right-0 top-0 w-1/3 h-full bg-primary-container skew-x-[-20deg] transform origin-top hidden md:block opacity-50&quot;></div>
+<div class=&quot;max-w-container-max mx-auto flex flex-col md:flex-row items-center justify-between relative z-10 gap-6&quot;>
+<div class=&quot;text-center md:text-left scroll-animate&quot;>
+<h2 class=&quot;font-headline-lg text-headline-lg text-on-tertiary mb-2&quot;>Need the Gasman?</h2>
+<p class=&quot;font-body-lg text-body-lg text-tertiary-fixed-dim&quot;>Call our freephone right now</p>
+</div>
+<a class=&quot;animate-float bg-secondary-container hover:bg-secondary text-on-tertiary px-6 py-3 rounded-DEFAULT font-headline-md text-headline-md shadow-lg hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] flex items-center gap-3&quot; href=&quot;tel:0800427626&quot; style=&quot;background-color: rgb(230, 89, 43);&quot;>
+<span class=&quot;material-symbols-outlined fill&quot;>call</span>
+            0800 GAS MAN
+        </a>
+</div>
+</section></header>
+<!-- Need the Gasman Call-out -->
+<!-- Trust Indicator Strip -->
+<section class=&quot;border-b border-outline-variant/30 py-5 bg-surface-container-high&quot;>
+<div class=&quot;max-w-container-max mx-auto px-grid-gutter scroll-animate&quot;>
+<div class=&quot;flex flex-wrap justify-center md:justify-between items-center gap-4 text-center&quot;>
+<div class=&quot;flex items-center gap-2&quot;>
+<span class=&quot;material-symbols-outlined text-secondary-container&quot;>grade</span>
+<span class=&quot;font-label-bold&quot;>Rated 4.4 stars on Google by Tauranga homeowners</span>
+</div>
+</div>
+</div>
+</section>
+<!-- What We Do (Services) -->
+<section class=&quot;py-section-gap-mobile md:py-section-gap-desktop bg-surface overflow-hidden&quot; id=&quot;services&quot;>
+<div class=&quot;max-w-container-max mx-auto px-grid-gutter&quot;>
+<div class=&quot;text-center mb-12 scroll-animate&quot;>
+<h2 class=&quot;font-headline-lg text-headline-lg text-primary mb-4&quot;>What We Do</h2>
+<p class=&quot;font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto&quot;>Professional trade services for residential and commercial properties across the Bay of Plenty.</p>
+</div>
+<div class=&quot;hscroll flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 -mx-grid-gutter px-grid-gutter md:grid md:grid-cols-3 md:overflow-visible md:mx-0 md:px-0 md:pb-0 md:snap-none&quot; id=&quot;services-scroll&quot;>
+<!-- Plumbing -->
+<div class=&quot;scroll-animate bg-surface-container-lowest rounded-xl p-6 shadow-sm border-t-2 border-primary hover:-translate-y-2 hover:shadow-xl hover:border-secondary-container transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] flex flex-col h-full group w-[82%] sm:w-[320px] flex-shrink-0 snap-start md:w-auto md:flex-shrink md:snap-align-none&quot; style=&quot;transition-delay: 200ms;&quot;>
+<div class=&quot;w-12 h-12 rounded-full bg-primary-fixed-dim/20 flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]&quot;>
+<span class=&quot;material-symbols-outlined text-2xl&quot;>plumbing</span>
+</div>
+<h3 class=&quot;font-headline-md text-headline-md text-primary mb-2&quot;>Plumbing</h3>
+<p class=&quot;font-body-md text-body-md text-on-surface-variant mb-4 flex-grow&quot;>From leaky taps to full bathroom renovations, our certified plumbers handle it all with precision and care.</p>
+<a class=&quot;font-label-bold text-label-bold text-secondary-container hover:text-secondary flex items-center gap-1 transition-colors&quot; href=&quot;book-a-job.html&quot;>Book a Job <span class=&quot;group-hover:translate-x-1 transition-transform&quot;>→</span></a>
+</div>
+<!-- Gas Fitting -->
+<div class=&quot;scroll-animate bg-surface-container-lowest rounded-xl p-6 shadow-sm border-t-2 border-secondary-container hover:-translate-y-2 hover:shadow-xl hover:border-primary transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] flex flex-col h-full group w-[82%] sm:w-[320px] flex-shrink-0 snap-start md:w-auto md:flex-shrink md:snap-align-none&quot; style=&quot;transition-delay: 400ms;&quot;>
+<div class=&quot;w-12 h-12 rounded-full bg-secondary-fixed/50 flex items-center justify-center mb-4 text-secondary-container group-hover:scale-110 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]&quot;>
+<span class=&quot;material-symbols-outlined text-2xl&quot;>local_fire_department</span>
+</div>
+<h3 class=&quot;font-headline-md text-headline-md text-primary mb-2&quot;>Gas Fitting</h3>
+<p class=&quot;font-body-md text-body-md text-on-surface-variant mb-4 flex-grow&quot;>Safe, certified installation and servicing of gas appliances, hot water systems, and central heating.</p>
+<a class=&quot;font-label-bold text-label-bold text-secondary-container hover:text-secondary flex items-center gap-1 transition-colors&quot; href=&quot;book-a-job.html&quot;>Book a Job <span class=&quot;group-hover:translate-x-1 transition-transform&quot;>→</span></a>
+</div>
+<!-- Drainage -->
+<div class=&quot;scroll-animate bg-surface-container-lowest rounded-xl p-6 shadow-sm border-t-2 border-primary hover:-translate-y-2 hover:shadow-xl hover:border-secondary-container transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] flex flex-col h-full group w-[82%] sm:w-[320px] flex-shrink-0 snap-start last:mr-2 md:w-auto md:flex-shrink md:snap-align-none md:mr-0&quot; style=&quot;transition-delay: 600ms;&quot;>
+<div class=&quot;w-12 h-12 rounded-full bg-primary-fixed-dim/20 flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]&quot;>
+<span class=&quot;material-symbols-outlined text-2xl&quot;>water_drop</span>
+</div>
+<h3 class=&quot;font-headline-md text-headline-md text-primary mb-2&quot;>Drainage</h3>
+<p class=&quot;font-body-md text-body-md text-on-surface-variant mb-4 flex-grow&quot;>Unblocking drains, CCTV inspections, and new drainage installations to keep your property safe and dry.</p>
+<a class=&quot;font-label-bold text-label-bold text-secondary-container hover:text-secondary flex items-center gap-1 transition-colors&quot; href=&quot;book-a-job.html&quot;>Book a Job <span class=&quot;group-hover:translate-x-1 transition-transform&quot;>→</span></a>
+</div>
+</div>
+<div class=&quot;flex justify-center gap-1.5 mt-4 md:hidden&quot; id=&quot;services-dots&quot; aria-hidden=&quot;true&quot;>
+<span class=&quot;carousel-dot&quot;></span>
+<span class=&quot;carousel-dot&quot;></span>
+<span class=&quot;carousel-dot&quot;></span>
+</div>
+</div>
+</section>
+<!-- About Us Section -->
+<section class=&quot;py-section-gap-mobile md:py-section-gap-desktop px-grid-gutter overflow-hidden bg-surface-container&quot; id=&quot;about&quot;>
+<div class=&quot;max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center&quot;>
+<div class=&quot;order-2 md:order-1 scroll-animate&quot;>
+<h2 class=&quot;font-headline-lg text-headline-lg text-primary mb-4&quot;>About Steve's Plumbing &amp;amp; Gas</h2>
+<div class=&quot;space-y-4 text-on-surface-variant font-body-md text-body-md&quot;>
+<p class=&quot;&quot;>Founded by Steve Morgan in 1982, we have built a long-standing reputation for excellence across Tauranga and the wider Bay of Plenty region.</p>
+<p class=&quot;&quot;>Our fully qualified team specializes in precision plumbing, gas fitting, and drainage solutions. We pride ourselves on a team-oriented approach that ensures every job—from minor repairs to major installations—is completed to the highest trade standards.</p>
+<p class=&quot;&quot;>With over four decades of local experience, we remain committed to providing the reliable, high-impact service our community trusts.</p>
+<div class=&quot;mt-6&quot;>
+<a class=&quot;inline-block bg-secondary-container hover:bg-secondary text-on-tertiary px-5 py-2.5 rounded-lg font-label-bold text-label-bold shadow-md hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]&quot; href=&quot;#quote-form&quot; style=&quot;background-color: rgb(230, 89, 43);&quot;>Work With Us</a>
+</div>
+</div>
+</div>
+<div class=&quot;order-1 md:order-2 relative scroll-animate&quot; style=&quot;transition-delay: 400ms;&quot;>
+<div class=&quot;aspect-square rounded-xl overflow-hidden shadow-md&quot;>
+<img alt=&quot;Team at work&quot; class=&quot;w-full h-full object-cover transition-transform duration-1000 hover:scale-105&quot; src=&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDgnw1nGOEqRriU3zR_waXa39RPwoC50_McQYU6Oo_ww-ZcOLmAhkuB6go7oHAz4KXu5EWFVuZYoOgShJCxtHKLg2QnWTH2RCcBfaQGLQKUoroqv0odjioLNL1Rv5kmI-GTw9huzKJYHnV6fUCzLwYgMNnR4zcTaEcSef0BCx7MBcX75EUQX2DSEArN1BwD_A2PWOPZdHs-P4RAJ-ecV_eXlKDzY2Iqyc8FTRhVhEpU0u75COs4p21-U9LkpamwDMnoWhE9c_9rGpM51A&quot;/>
+</div>
+<div class=&quot;absolute -bottom-3 -left-3 w-20 h-20 bg-secondary-container/10 rounded-xl -z-10&quot;></div>
+</div>
+</div>
+</section>
+<!-- Why Locals Trust Steve's -->
+<section class=&quot;py-section-gap-mobile md:py-section-gap-desktop px-grid-gutter bg-surface overflow-hidden&quot;>
+<div class=&quot;max-w-container-max mx-auto&quot;>
+<h2 class=&quot;font-headline-lg text-headline-lg text-primary text-center mb-12 scroll-animate&quot;>Why Locals Trust Steve's</h2>
+<div class=&quot;grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center&quot;>
+<div class=&quot;flex flex-col items-center scroll-animate group&quot; style=&quot;transition-delay: 200ms;&quot;>
+<div class=&quot;w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-3 text-primary group-hover:scale-110 group-hover:shadow-md transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]&quot;>
+<span class=&quot;material-symbols-outlined text-3xl&quot;>school</span>
+</div>
+<h4 class=&quot;font-headline-md text-headline-md text-primary mb-1 text-[16px]&quot;>Fully Qualified</h4>
+<p class=&quot;font-body-md text-body-md text-on-surface-variant&quot;>Master plumbers and certified gasfitters.</p>
+</div>
+<div class=&quot;flex flex-col items-center scroll-animate group&quot; style=&quot;transition-delay: 400ms;&quot;>
+<div class=&quot;w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-3 text-primary group-hover:scale-110 group-hover:shadow-md transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]&quot;>
+<span class=&quot;material-symbols-outlined text-3xl&quot;>payments</span>
+</div>
+<h4 class=&quot;font-headline-md text-headline-md text-primary mb-1 text-[16px]&quot;>Transparent Pricing</h4>
+<p class=&quot;font-body-md text-body-md text-on-surface-variant&quot;>No hidden fees or surprise bills.</p>
+</div>
+<div class=&quot;flex flex-col items-center scroll-animate group&quot; style=&quot;transition-delay: 600ms;&quot;>
+<div class=&quot;w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-3 text-primary group-hover:scale-110 group-hover:shadow-md transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]&quot;>
+<span class=&quot;material-symbols-outlined text-3xl&quot;>timer</span>
+</div>
+<h4 class=&quot;font-headline-md text-headline-md text-primary mb-1 text-[16px]&quot;>On-Time Guarantee</h4>
+<p class=&quot;font-body-md text-body-md text-on-surface-variant&quot;>We respect your time and turn up when promised.</p>
+</div>
+<div class=&quot;flex flex-col items-center scroll-animate group&quot; style=&quot;transition-delay: 800ms;&quot;>
+<div class=&quot;w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-3 text-primary group-hover:scale-110 group-hover:shadow-md transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]&quot;>
+<span class=&quot;material-symbols-outlined text-3xl&quot;>handshake</span>
+</div>
+<h4 class=&quot;font-headline-md text-headline-md text-primary mb-1 text-[16px]&quot;>Local &amp;amp; Reliable</h4>
+<p class=&quot;font-body-md text-body-md text-on-surface-variant&quot;>Proudly serving the Bay of Plenty community.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class=&quot;py-section-gap-mobile md:py-section-gap-desktop bg-surface overflow-hidden&quot; id=&quot;reviews&quot;>
+<div class=&quot;max-w-container-max mx-auto px-grid-gutter&quot;>
+<div class=&quot;text-center mb-12 scroll-animate&quot;>
+<h2 class=&quot;font-headline-lg text-headline-lg text-primary mb-4&quot;>What Our Customers Say</h2>
+<div class=&quot;flex justify-center gap-1 text-secondary-container mb-2&quot;>
+<span class=&quot;material-symbols-outlined fill&quot;>star</span>
+<span class=&quot;material-symbols-outlined fill&quot;>star</span>
+<span class=&quot;material-symbols-outlined fill&quot;>star</span>
+<span class=&quot;material-symbols-outlined fill&quot;>star</span>
+<span class=&quot;material-symbols-outlined fill&quot;>star_half</span>
+</div>
+</div>
+<div class=&quot;hscroll flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 -mx-grid-gutter px-grid-gutter md:grid md:grid-cols-3 md:overflow-visible md:mx-0 md:px-0 md:pb-0 md:snap-none&quot; id=&quot;reviews-scroll&quot;>
+<!-- Review 1 -->
+<div class=&quot;scroll-animate bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-outline-variant/30 hover:-translate-y-2 hover:shadow-xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] flex flex-col h-full w-[82%] sm:w-[320px] flex-shrink-0 snap-start md:w-auto md:flex-shrink md:snap-align-none&quot; style=&quot;transition-delay: 200ms;&quot;>
+<div class=&quot;flex gap-1 text-secondary-container mb-3&quot;>
+<span class=&quot;material-symbols-outlined text-sm fill&quot;>star</span>
+<span class=&quot;material-symbols-outlined text-sm fill&quot;>star</span>
+<span class=&quot;material-symbols-outlined text-sm fill&quot;>star</span>
+<span class=&quot;material-symbols-outlined text-sm fill&quot;>star</span>
+<span class=&quot;material-symbols-outlined text-sm fill&quot;>star</span>
+</div>
+<p class=&quot;font-body-md text-body-md text-on-surface-variant mb-4 italic flex-grow&quot;>&quot;Highly recommended, Steve showed up for an emergency 2 days before Christmas, he was professional and explained all work he was doing.&quot;</p>
+<div class=&quot;font-label-bold text-label-bold text-primary&quot;>Dev G., Tauranga</div>
+</div>
+<!-- Review 2 -->
+<div class=&quot;scroll-animate bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-outline-variant/30 hover:-translate-y-2 hover:shadow-xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] flex flex-col h-full w-[82%] sm:w-[320px] flex-shrink-0 snap-start md:w-auto md:flex-shrink md:snap-align-none&quot; style=&quot;transition-delay: 400ms;&quot;>
+<div class=&quot;flex gap-1 text-secondary-container mb-3&quot;>
+<span class=&quot;material-symbols-outlined text-sm fill&quot;>star</span>
+<span class=&quot;material-symbols-outlined text-sm fill&quot;>star</span>
+<span class=&quot;material-symbols-outlined text-sm fill&quot;>star</span>
+<span class=&quot;material-symbols-outlined text-sm fill&quot;>star</span>
+<span class=&quot;material-symbols-outlined text-sm fill&quot;>star</span>
+</div>
+<p class=&quot;font-body-md text-body-md text-on-surface-variant mb-4 italic flex-grow&quot;>&quot;We have used Steve Plumbing &amp;amp; Gas since 2009 and have always been really happy with the service. Always on time, a job well done.&quot;</p>
+<div class=&quot;font-label-bold text-label-bold text-primary&quot;>Jenny P., Tauranga</div>
+</div>
+<!-- Review 3 -->
+<div class=&quot;scroll-animate bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-outline-variant/30 hover:-translate-y-2 hover:shadow-xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] flex flex-col h-full w-[82%] sm:w-[320px] flex-shrink-0 snap-start last:mr-2 md:w-auto md:flex-shrink md:snap-align-none md:mr-0&quot; style=&quot;transition-delay: 600ms;&quot;>
+<div class=&quot;flex gap-1 text-secondary-container mb-3&quot;>
+<span class=&quot;material-symbols-outlined text-sm fill&quot;>star</span>
+<span class=&quot;material-symbols-outlined text-sm fill&quot;>star</span>
+<span class=&quot;material-symbols-outlined text-sm fill&quot;>star</span>
+<span class=&quot;material-symbols-outlined text-sm fill&quot;>star</span>
+<span class=&quot;material-symbols-outlined text-sm fill&quot;>star</span>
+</div>
+<p class=&quot;font-body-md text-body-md text-on-surface-variant mb-4 italic flex-grow&quot;>&quot;Excellent communication from Steve and Deidre. We had a messy job; the two young plumbers knew exactly what to do.&quot;</p>
+<div class=&quot;font-label-bold text-label-bold text-primary&quot;>Nick F., Tauranga</div>
+</div>
+</div>
+<div class=&quot;flex justify-center gap-1.5 mt-4 md:hidden&quot; id=&quot;reviews-dots&quot; aria-hidden=&quot;true&quot;>
+<span class=&quot;carousel-dot&quot;></span>
+<span class=&quot;carousel-dot&quot;></span>
+<span class=&quot;carousel-dot&quot;></span>
+</div>
+<div class=&quot;flex items-center justify-center gap-2 text-on-surface-variant font-label-bold text-label-bold scroll-animate mt-8&quot;>
+<span class=&quot;material-symbols-outlined text-secondary-container&quot;>grade</span>
+<span class=&quot;&quot;>Rated 4.4 stars on Google by Tauranga homeowners</span>
+</div>
+</div>
+</section>
+<!-- Get a Free Quote Form -->
+<section class=&quot;py-12 px-grid-gutter overflow-hidden&quot; id=&quot;quote-form&quot; style=&quot;background-color: rgb(0, 102, 125);&quot;>
+<div class=&quot;max-w-container-max mx-auto&quot;>
+<div class=&quot;text-center mb-10 scroll-animate&quot;>
+<h2 class=&quot;font-headline-lg text-headline-lg mb-4 text-on-tertiary&quot;>Get a Free Quote</h2>
+<p class=&quot;font-body-md text-body-md max-w-2xl mx-auto text-on-tertiary&quot;>Tell us about your project and we'll provide a transparent, no-obligation estimate.</p>
+</div>
+<form class=&quot;max-w-3xl mx-auto bg-surface-container-low p-6 rounded-xl shadow-md border border-primary/20 scroll-animate&quot; id=&quot;quoteForm&quot; style=&quot;transition-delay: 400ms;&quot;>
+<div class=&quot;grid grid-cols-1 gap-5 mb-5 md:grid-cols-3&quot;>
+<div>
+<label class=&quot;block font-label-bold text-label-bold mb-2 text-primary&quot;>Full Name *</label>
+<input class=&quot;w-full px-3 py-2 rounded-DEFAULT border-2 border-primary/20 focus:border-secondary outline-none transition-colors duration-700&quot; id=&quot;quoteName&quot; name=&quot;name&quot; placeholder=&quot;e.g. John Smith&quot; required type=&quot;text&quot;/>
+</div>
+<div>
+<label class=&quot;block font-label-bold text-label-bold mb-2 text-primary&quot;>Email *</label>
+<input class=&quot;w-full px-3 py-2 rounded-DEFAULT border-2 border-primary/20 focus:border-secondary outline-none transition-colors duration-700&quot; id=&quot;quoteEmail&quot; name=&quot;email&quot; placeholder=&quot;example@email.com&quot; required type=&quot;email&quot;/>
+</div>
+<div>
+<label class=&quot;block font-label-bold text-label-bold mb-2 text-primary&quot;>Suburb</label>
+<input class=&quot;w-full px-3 py-2 rounded-DEFAULT border-2 border-primary/20 focus:border-secondary outline-none transition-colors duration-700&quot; id=&quot;quoteSuburb&quot; name=&quot;suburb&quot; placeholder=&quot;e.g. Mount Maunganui&quot; type=&quot;text&quot;/>
+</div>
+</div>
+<div class=&quot;mb-5&quot;>
+<label class=&quot;block font-label-bold text-label-bold mb-2 text-primary&quot;>Service Needed</label>
+<select class=&quot;w-full px-3 py-2 rounded-DEFAULT border-2 border-primary/20 focus:border-secondary outline-none transition-colors duration-700&quot; id=&quot;quoteService&quot; name=&quot;service&quot;>
+<option value=&quot;plumbing&quot;>Plumbing</option>
+<option value=&quot;gas&quot;>Gas Fitting</option>
+<option value=&quot;drainage&quot;>Drainage</option>
+</select>
+</div>
+<div class=&quot;mb-6&quot;>
+<label class=&quot;block font-label-bold text-label-bold mb-2 text-primary&quot;>Brief Description</label>
+<textarea class=&quot;w-full px-3 py-2 rounded-DEFAULT border-2 border-primary/20 focus:border-secondary outline-none transition-colors duration-700&quot; id=&quot;quoteDescription&quot; name=&quot;description&quot; placeholder=&quot;Tell us what you need help with...&quot; rows=&quot;4&quot;></textarea>
+</div>
+<div class=&quot;text-center&quot;>
+<button class=&quot;bg-secondary-container hover:bg-secondary text-on-tertiary px-10 py-3 rounded-DEFAULT font-headline-md text-headline-md shadow-md hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] w-full sm:w-auto&quot; style=&quot;background-color: rgb(230, 89, 43);&quot; type=&quot;submit&quot;>
+                    Request My Quote
+                </button>
+<p class=&quot;text-sm italic text-primary mt-3&quot;>We'll get back to you as soon as possible.</p>
+</div>
+</form>
+<div class=&quot;hidden max-w-3xl mx-auto bg-surface-container-low p-6 rounded-xl shadow-md border border-primary/20 text-center&quot; id=&quot;quoteFormSuccess&quot;>
+<div class=&quot;w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 text-primary&quot;>
+<span class=&quot;material-symbols-outlined text-3xl&quot;>check_circle</span>
+</div>
+<h3 class=&quot;font-headline-md text-headline-md text-primary mb-2&quot;>Quote Request Sent!</h3>
+<p class=&quot;font-body-md text-body-md text-on-surface-variant mb-6&quot;>Thanks<span id=&quot;quoteSuccessName&quot;></span> — we've got your details and will be in touch shortly with your free quote.</p>
+<button class=&quot;font-label-bold text-label-bold border border-primary/30 text-primary hover:bg-primary hover:text-on-primary px-5 py-2.5 rounded-lg transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]&quot; id=&quot;quoteFormReset&quot; type=&quot;button&quot;>Send Another Request</button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class=&quot;bg-primary py-section-gap-mobile md:py-section-gap-desktop px-grid-gutter text-on-primary&quot;>
+<div class=&quot;max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-6&quot;>
+<div class=&quot;col-span-1 md:col-span-2 lg:col-span-1&quot;>
+<div class=&quot;font-headline-md text-headline-md font-bold mb-3&quot;>Steve's Plumbing &amp;amp; Gas</div>
+<p class=&quot;opacity-80 mb-4&quot;>Professional, reliable plumbing and gas fitting services across Tauranga and Mount Maunganui.</p>
+<p class=&quot;text-sm opacity-60&quot;>© 2024 Steve's Plumbing &amp;amp; Gas. All rights reserved.</p>
+</div>
+<div>
+<h4 class=&quot;font-label-bold mb-3 opacity-50 uppercase tracking-wider&quot;>Services</h4>
+<ul class=&quot;space-y-2&quot;>
+<li class=&quot;&quot;><a class=&quot;hover:text-secondary-fixed transition-colors&quot; href=&quot;#services&quot;>Plumbing</a></li>
+<li class=&quot;&quot;><a class=&quot;hover:text-secondary-fixed transition-colors&quot; href=&quot;#services&quot;>Gas Fitting</a></li>
+<li class=&quot;&quot;><a class=&quot;hover:text-secondary-fixed transition-colors&quot; href=&quot;#services&quot;>Drainage</a></li>
+<li class=&quot;&quot;><a class=&quot;font-bold hover:text-secondary-fixed transition-colors&quot; href=&quot;#gasman&quot;>0800 GASMAN</a></li>
+</ul>
+</div>
+<div>
+<h4 class=&quot;font-label-bold mb-3 opacity-50 uppercase tracking-wider&quot;>Company</h4>
+<ul class=&quot;space-y-2&quot;>
+<li class=&quot;&quot;><a class=&quot;hover:text-secondary-fixed transition-colors&quot; href=&quot;#about&quot;>About Us</a></li>
+<li class=&quot;&quot;><a class=&quot;hover:text-secondary-fixed transition-colors&quot; href=&quot;#reviews&quot;>Reviews</a></li>
+<li class=&quot;&quot;><a class=&quot;hover:text-secondary-fixed transition-colors&quot; href=&quot;book-a-job.html&quot;>Book a Job</a></li>
+</ul>
+</div>
+<div>
+<h4 class=&quot;font-label-bold mb-3 opacity-50 uppercase tracking-wider&quot;>Contact</h4>
+<ul class=&quot;space-y-2&quot;>
+<li class=&quot;flex items-center gap-2&quot;><span class=&quot;material-symbols-outlined text-sm&quot;>call</span><a class=&quot;hover:text-secondary-fixed transition-colors&quot; href=&quot;tel:0800427626&quot;>07 571 5553</a></li>
+<li class=&quot;flex items-center gap-2&quot;><span class=&quot;material-symbols-outlined text-sm&quot;>mail</span><a class=&quot;hover:text-secondary-fixed transition-colors&quot; href=&quot;mailto:info@0800gasman.co.nz&quot;>info@0800gasman.co.nz</a></li>
+<li class=&quot;flex items-start gap-2 mt-3&quot;><span class=&quot;material-symbols-outlined text-sm mt-1&quot;>location_on</span><a class=&quot;font-label-bold opacity-90 hover:opacity-100 hover:text-secondary-fixed hover:underline transition-all text-sm&quot; href=&quot;https://www.google.com/maps/search/?api=1&amp;amp;query=9+Oak+Lane,+Judea,+Tauranga+3110,+New+Zealand&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;>9 Oak Lane, Judea, Tauranga 3110, New Zealand</a></li>
+</ul>
+</div>
+</div>
+</footer>
+<div id=&quot;copy-toast&quot; class=&quot;fixed left-1/2 bottom-6 -translate-x-1/2 bg-primary text-on-primary text-sm font-label-bold px-4 py-2.5 rounded-lg shadow-lg opacity-0 pointer-events-none transition-opacity duration-300 z-[100]&quot; role=&quot;status&quot; aria-live=&quot;polite&quot;></div>
+<script>
+    document.addEventListener(&quot;DOMContentLoaded&quot;, function() {
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    // Keep observing if we want it to repeat, otherwise unobserve
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-animate').forEach((el) => {
+            observer.observe(el);
+            // Optionally, trigger it immediately if already in view before JS runs
+            if (el.getBoundingClientRect().top < window.innerHeight) {
+                el.classList.add('is-visible');
+            }
+        });
+
+        // &quot;What We Do&quot; and &quot;Reviews&quot; both use the same mobile treatment: a horizontally
+        // scrollable row of cards with a small dot indicator synced to whichever card is
+        // currently in view. On desktop both containers switch to a regular grid (via
+        // Tailwind's md: classes) and never scroll, so the dots stay hidden and this is
+        // a harmless no-op there.
+        function initCardCarousel(scrollerId, dotsId) {
+            const scroller = document.getElementById(scrollerId);
+            const dots = Array.from(document.querySelectorAll('#' + dotsId + ' .carousel-dot'));
+            if (!scroller || !dots.length) return;
+            const cards = Array.from(scroller.children);
+
+            function updateDots() {
+                const scrollerRect = scroller.getBoundingClientRect();
+                const center = scrollerRect.left + scrollerRect.width / 2;
+                let closest = 0;
+                let closestDist = Infinity;
+                cards.forEach((card, i) => {
+                    const rect = card.getBoundingClientRect();
+                    const cardCenter = rect.left + rect.width / 2;
+                    const dist = Math.abs(cardCenter - center);
+                    if (dist < closestDist) {
+                        closestDist = dist;
+                        closest = i;
+                    }
+                });
+                dots.forEach((dot, i) => dot.classList.toggle('active', i === closest));
+            }
+
+            let ticking = false;
+            scroller.addEventListener('scroll', function () {
+                if (ticking) return;
+                ticking = true;
+                requestAnimationFrame(function () {
+                    updateDots();
+                    ticking = false;
+                });
+            }, { passive: true });
+
+            dots.forEach((dot, i) => {
+                dot.style.cursor = 'pointer';
+                dot.addEventListener('click', function () {
+                    const card = cards[i];
+                    if (card) card.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                });
+            });
+
+            updateDots();
+        }
+
+        initCardCarousel('services-scroll', 'services-dots');
+        initCardCarousel('reviews-scroll', 'reviews-dots');
+
+        // Get a Free Quote form: there's no backend wired up yet (see LEIA-ME.txt), so
+        // a real submit would just reload/navigate and land on a blank page. We stop
+        // that, run the browser's own validation, and only then swap the form for a
+        // clear success message -- never the other way around.
+        (function () {
+            const form = document.getElementById('quoteForm');
+            const success = document.getElementById('quoteFormSuccess');
+            const successName = document.getElementById('quoteSuccessName');
+            const resetBtn = document.getElementById('quoteFormReset');
+            if (!form || !success) return;
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                if (!form.checkValidity()) {
+                    form.reportValidity();
+                    return;
+                }
+                const nameField = document.getElementById('quoteName');
+                const firstName = nameField &amp;&amp; nameField.value.trim() ? ', ' + nameField.value.trim().split(' ')[0] : '';
+                if (successName) successName.textContent = firstName;
+                form.classList.add('hidden');
+                success.classList.remove('hidden');
+                success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            });
+
+            if (resetBtn) {
+                resetBtn.addEventListener('click', function () {
+                    form.reset();
+                    success.classList.add('hidden');
+                    form.classList.remove('hidden');
+                    form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                });
+            }
+        })();
+
+        // Mobile hamburger menu: opens the same links the desktop nav has.
+        (function () {
+            const toggle = document.getElementById('mobile-menu-toggle');
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('mobile-menu-icon');
+            if (!toggle || !menu) return;
+
+            function closeMenu() {
+                menu.classList.add('hidden');
+                toggle.setAttribute('aria-expanded', 'false');
+                if (icon) icon.textContent = 'menu';
+            }
+            function openMenu() {
+                menu.classList.remove('hidden');
+                toggle.setAttribute('aria-expanded', 'true');
+                if (icon) icon.textContent = 'close';
+            }
+
+            toggle.addEventListener('click', function (e) {
+                e.stopPropagation();
+                if (menu.classList.contains('hidden')) openMenu(); else closeMenu();
+            });
+
+            menu.querySelectorAll('a').forEach(function (a) {
+                a.addEventListener('click', closeMenu);
+            });
+
+            document.addEventListener('click', function (e) {
+                if (!menu.classList.contains('hidden') &amp;&amp; !menu.contains(e.target) &amp;&amp; e.target !== toggle &amp;&amp; !toggle.contains(e.target)) {
+                    closeMenu();
+                }
+            });
+
+            window.addEventListener('resize', function () {
+                if (window.innerWidth >= 768) closeMenu();
+            });
+        })();
+
+        // Phone / email buttons: on a real phone, &quot;tel:&quot; links should just open the
+        // dialer as normal. On a computer there's nothing to dial, so we copy the
+        // number instead -- and email addresses are always copied, on any device.
+        (function () {
+            function isMobileDevice() {
+                var ua = navigator.userAgent || '';
+                if (/Android|iPhone|iPad|iPod|Windows Phone|Mobile/i.test(ua)) return true;
+                if (window.matchMedia &amp;&amp; window.matchMedia('(pointer: coarse)').matches) return true;
+                return false;
+            }
+
+            function copyText(text) {
+                function fallback() {
+                    return new Promise(function (resolve, reject) {
+                        try {
+                            var ta = document.createElement('textarea');
+                            ta.value = text;
+                            ta.setAttribute('readonly', '');
+                            ta.style.position = 'fixed';
+                            ta.style.top = '-1000px';
+                            ta.style.opacity = '0';
+                            document.body.appendChild(ta);
+                            ta.focus();
+                            ta.select();
+                            var ok = document.execCommand('copy');
+                            document.body.removeChild(ta);
+                            if (ok) resolve(); else reject(new Error('execCommand failed'));
+                        } catch (err) {
+                            reject(err);
+                        }
+                    });
+                }
+                if (navigator.clipboard &amp;&amp; navigator.clipboard.writeText) {
+                    return navigator.clipboard.writeText(text).catch(fallback);
+                }
+                return fallback();
+            }
+
+            var toast = document.getElementById('copy-toast');
+            function showToast(msg) {
+                if (!toast) return;
+                toast.textContent = msg;
+                toast.classList.remove('opacity-0');
+                toast.classList.add('opacity-100');
+                clearTimeout(toast._hideTimer);
+                toast._hideTimer = setTimeout(function () {
+                    toast.classList.remove('opacity-100');
+                    toast.classList.add('opacity-0');
+                }, 1800);
+            }
+
+            document.querySelectorAll('a[href^=&quot;tel:&quot;]').forEach(function (a) {
+                a.addEventListener('click', function (e) {
+                    if (isMobileDevice()) return; // let the phone open its dialer normally
+                    e.preventDefault();
+                    var number = a.getAttribute('href').replace('tel:', '');
+                    copyText(number).then(function () {
+                        showToast('Number copied: ' + number);
+                    });
+                });
+            });
+
+            document.querySelectorAll('a[href^=&quot;mailto:&quot;]').forEach(function (a) {
+                a.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    var email = a.getAttribute('href').replace('mailto:', '').split('?')[0];
+                    copyText(email).then(function () {
+                        showToast('Email copied: ' + email);
+                    });
+                });
+            });
+        })();
+    });
+</script>
+
+<script>
+(function(){
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a');
+    if(!a) return;
+    var href = a.getAttribute('href');
+    if(!href) return;
+    if(href === 'book-a-job.html' || href.indexOf('book-a-job.html#') === 0){
+      e.preventDefault();
+      var hash = href.split('#')[1] || null;
+      parent.postMessage({type:'nav', file:'book-a-job.html', hash: hash}, '*');
+    } else if(href === 'index.html' || href.indexOf('index.html#') === 0){
+      e.preventDefault();
+      var hash = href.split('#')[1] || null;
+      parent.postMessage({type:'nav', file:'index.html', hash: hash}, '*');
+    } else if(href.indexOf('#') === 0){
+      // Pure same-page fragment link (e.g. &quot;#services&quot;). Handle it locally instead of
+      // letting the browser resolve it, because a srcdoc iframe's default base URL is
+      // the PARENT document's URL, not this document -- following it natively would
+      // navigate this iframe away from its srcdoc content.
+      e.preventDefault();
+      if(href.length > 1){
+        var target = document.getElementById(href.slice(1));
+        if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+      }
+    }
+  });
+  window.addEventListener('message', function(e){
+    if(!e.data || e.data.type !== 'scrollTo') return;
+    var behavior = e.data.instant ? 'instant' : 'smooth';
+    if(e.data.hash){
+      var el = document.getElementById(e.data.hash);
+      if(el) el.scrollIntoView({behavior: behavior, block:'start'});
+    } else {
+      window.scrollTo({top:0, behavior: behavior});
+    }
+  });
+})();
+</script>
+</body></html>"></iframe>
+<iframe id="frame-book" title="Book a Job" srcdoc="<!DOCTYPE html>
+
+<html class=&quot;scroll-smooth&quot; lang=&quot;en&quot; style=&quot;&quot;><head>
+<meta charset=&quot;utf-8&quot;/>
+<meta content=&quot;width=device-width, initial-scale=1.0&quot; name=&quot;viewport&quot;/>
+<title>Book a Job - Steve's Plumbing &amp;amp; Gas</title>
+<script src=&quot;https://cdn.tailwindcss.com?plugins=forms,container-queries&quot;></script>
+<link href=&quot;https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;amp;family=Inter:wght@400;600&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot;/>
+<link href=&quot;https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot;/>
+<script id=&quot;tailwind-config&quot;>
+  tailwind.config = {
+    darkMode: &quot;class&quot;,
+    theme: {
+      extend: {
+        &quot;colors&quot;: {
+                &quot;on-surface-variant&quot;: &quot;#44464e&quot;,
+                &quot;on-error-container&quot;: &quot;#93000a&quot;,
+                &quot;surface-container-highest&quot;: &quot;#e1e3e4&quot;,
+                &quot;secondary-container&quot;: &quot;#fc820c&quot;,
+                &quot;tertiary-fixed-dim&quot;: &quot;#c1c7ce&quot;,
+                &quot;primary&quot;: &quot;#00081e&quot;,
+                &quot;on-primary&quot;: &quot;#ffffff&quot;,
+                &quot;outline-variant&quot;: &quot;#c5c6cf&quot;,
+                &quot;on-primary-fixed&quot;: &quot;#041a3f&quot;,
+                &quot;surface&quot;: &quot;#f8f9fa&quot;,
+                &quot;on-surface&quot;: &quot;#191c1d&quot;,
+                &quot;error&quot;: &quot;#ba1a1a&quot;,
+                &quot;on-secondary&quot;: &quot;#ffffff&quot;,
+                &quot;on-error&quot;: &quot;#ffffff&quot;,
+                &quot;on-tertiary-container&quot;: &quot;#82888f&quot;,
+                &quot;on-tertiary&quot;: &quot;#ffffff&quot;,
+                &quot;on-secondary-fixed&quot;: &quot;#311300&quot;,
+                &quot;inverse-surface&quot;: &quot;#2e3132&quot;,
+                &quot;inverse-on-surface&quot;: &quot;#f0f1f2&quot;,
+                &quot;on-tertiary-fixed-variant&quot;: &quot;#41484d&quot;,
+                &quot;primary-fixed-dim&quot;: &quot;#b4c6f4&quot;,
+                &quot;error-container&quot;: &quot;#ffdad6&quot;,
+                &quot;surface-dim&quot;: &quot;#d9dadb&quot;,
+                &quot;surface-container-lowest&quot;: &quot;#ffffff&quot;,
+                &quot;outline&quot;: &quot;#75777f&quot;,
+                &quot;on-secondary-container&quot;: &quot;#5e2c00&quot;,
+                &quot;tertiary&quot;: &quot;#04090e&quot;,
+                &quot;surface-container-high&quot;: &quot;#e7e8e9&quot;,
+                &quot;on-primary-container&quot;: &quot;#7687b2&quot;,
+                &quot;secondary-fixed-dim&quot;: &quot;#ffb786&quot;,
+                &quot;on-tertiary-fixed&quot;: &quot;#161c21&quot;,
+                &quot;on-background&quot;: &quot;#191c1d&quot;,
+                &quot;secondary&quot;: &quot;#964900&quot;,
+                &quot;primary-fixed&quot;: &quot;#d9e2ff&quot;,
+                &quot;tertiary-fixed&quot;: &quot;#dde3ea&quot;,
+                &quot;on-secondary-fixed-variant&quot;: &quot;#723600&quot;,
+                &quot;surface-container-low&quot;: &quot;#f3f4f5&quot;,
+                &quot;tertiary-container&quot;: &quot;#1b2126&quot;,
+                &quot;surface-variant&quot;: &quot;#e1e3e4&quot;,
+                &quot;surface-bright&quot;: &quot;#f8f9fa&quot;,
+                &quot;secondary-fixed&quot;: &quot;#ffdcc6&quot;,
+                &quot;primary-container&quot;: &quot;#0a1f44&quot;,
+                &quot;inverse-primary&quot;: &quot;#b4c6f4&quot;,
+                &quot;surface-tint&quot;: &quot;#4c5e86&quot;,
+                &quot;surface-container&quot;: &quot;#edeeef&quot;,
+                &quot;on-primary-fixed-variant&quot;: &quot;#34466d&quot;,
+                &quot;background&quot;: &quot;#f8f9fa&quot;
+        },
+        &quot;borderRadius&quot;: {
+                &quot;DEFAULT&quot;: &quot;0.25rem&quot;,
+                &quot;lg&quot;: &quot;0.5rem&quot;,
+                &quot;xl&quot;: &quot;0.75rem&quot;,
+                &quot;full&quot;: &quot;9999px&quot;
+        },
+        &quot;spacing&quot;: {
+                &quot;section-gap-mobile&quot;: &quot;64px&quot;,
+                &quot;container-max&quot;: &quot;1280px&quot;,
+                &quot;section-gap-desktop&quot;: &quot;120px&quot;,
+                &quot;grid-gutter&quot;: &quot;24px&quot;,
+                &quot;base&quot;: &quot;8px&quot;
+        },
+        &quot;fontFamily&quot;: {
+                &quot;headline-xl-mobile&quot;: [
+                        &quot;Montserrat&quot;
+                ],
+                &quot;label-bold&quot;: [
+                        &quot;Inter&quot;
+                ],
+                &quot;headline-xl&quot;: [
+                        &quot;Montserrat&quot;
+                ],
+                &quot;body-lg&quot;: [
+                        &quot;Inter&quot;
+                ],
+                &quot;headline-md&quot;: [
+                        &quot;Montserrat&quot;
+                ],
+                &quot;headline-lg&quot;: [
+                        &quot;Montserrat&quot;
+                ],
+                &quot;body-md&quot;: [
+                        &quot;Inter&quot;
+                ]
+        },
+        &quot;fontSize&quot;: {
+                &quot;headline-xl-mobile&quot;: [
+                        &quot;26px&quot;,
+                        {
+                                &quot;lineHeight&quot;: &quot;32px&quot;,
+                                &quot;letterSpacing&quot;: &quot;-0.01em&quot;,
+                                &quot;fontWeight&quot;: &quot;700&quot;
+                        }
+                ],
+                &quot;label-bold&quot;: [
+                        &quot;12px&quot;,
+                        {
+                                &quot;lineHeight&quot;: &quot;16px&quot;,
+                                &quot;letterSpacing&quot;: &quot;0.05em&quot;,
+                                &quot;fontWeight&quot;: &quot;600&quot;
+                        }
+                ],
+                &quot;headline-xl&quot;: [
+                        &quot;38px&quot;,
+                        {
+                                &quot;lineHeight&quot;: &quot;48px&quot;,
+                                &quot;letterSpacing&quot;: &quot;-0.02em&quot;,
+                                &quot;fontWeight&quot;: &quot;700&quot;
+                        }
+                ],
+                &quot;body-lg&quot;: [
+                        &quot;15px&quot;,
+                        {
+                                &quot;lineHeight&quot;: &quot;24px&quot;,
+                                &quot;fontWeight&quot;: &quot;400&quot;
+                        }
+                ],
+                &quot;headline-md&quot;: [
+                        &quot;20px&quot;,
+                        {
+                                &quot;lineHeight&quot;: &quot;28px&quot;,
+                                &quot;fontWeight&quot;: &quot;600&quot;
+                        }
+                ],
+                &quot;headline-lg&quot;: [
+                        &quot;26px&quot;,
+                        {
+                                &quot;lineHeight&quot;: &quot;34px&quot;,
+                                &quot;fontWeight&quot;: &quot;700&quot;
+                        }
+                ],
+                &quot;body-md&quot;: [
+                        &quot;14px&quot;,
+                        {
+                                &quot;lineHeight&quot;: &quot;20px&quot;,
+                                &quot;fontWeight&quot;: &quot;400&quot;
+                        }
+                ]
+        },
+        &quot;keyframes&quot;: {
+            &quot;pulse-slow&quot;: {
+                &quot;0%, 100%&quot;: { opacity: 1 },
+                &quot;50%&quot;: { opacity: .7 }
+            },
+            &quot;slide-in-right&quot;: {
+                &quot;0%&quot;: { opacity: 0, transform: &quot;translateX(-20px)&quot; },
+                &quot;100%&quot;: { opacity: 1, transform: &quot;translateX(0)&quot; }
+            }
+        },
+        &quot;animation&quot;: {
+            &quot;pulse-slow&quot;: &quot;pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite&quot;,
+            &quot;slide-in-right&quot;: &quot;slide-in-right 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards&quot;
+        }
+},
+    },
+  }
+</script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Reveal Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Nav Link Underlines */
+        .nav-link {
+            position: relative;
+            display: inline-block;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: rgb(230, 89, 43);
+            transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            .reveal, .form-section-animate {
+                transition: none !important;
+                animation: none !important;
+                opacity: 1;
+                transform: none;
+            }
+            .material-symbols-outlined {
+                transition: none !important;
+            }
+            .nav-link::after {
+                transition: none !important;
+            }
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        /* Form Input Enhancements */
+        .group-focus-within .material-symbols-outlined {
+            transform: scale(1.1);
+            color: rgb(230, 89, 43) !important;
+        }
+        .group-focus-within label {
+            color: #00081e !important;
+        }
+
+        /* Slide in classes for form sections */
+        .form-section-animate {
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .form-section-animate.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class=&quot;text-on-surface font-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container bg-surface-container-low&quot;>
+<!-- TopNavBar -->
+<header class=&quot;relative shadow-md w-full sticky top-0 z-50 bg-white h-16 flex items-center&quot;>
+<div class=&quot;flex justify-between items-center w-full px-6 mx-auto h-full&quot; style=&quot;max-width: 1024px;&quot;>
+<div class=&quot;flex items-center h-full py-2&quot;>
+<img alt=&quot;Steve's Plumbing &amp;amp; Gas Logo&quot; class=&quot;h-12 w-auto object-contain&quot; src=&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAq-xAo3XhMSyk47cED8jwTHDgZXDVARtLUrhBNPOipYmkBjgTMjIGKJnqLRjepfoN7Oa-MYGcf3WyFl1GVO7D3Afi3AjR7Sq3YPnz8i-95EmRYo5Tu25rn4QvHOhTnsUFB7ckTIpvnExuEfstaK5ToMHI_k6zbyphggBOoE97zM9drjGI6ZLV4Zfeg5tGaStVKZr3vqHEinTHF4NXUxev-E0vU4c9R3u1KhWdBonQ_imwF3Rn6OEYhaSY2TmnpxcElPSFytyo7-p74Nw&quot;/>
+</div>
+<div class=&quot;hidden md:flex space-x-6 items-center&quot;>
+<a class=&quot;font-label-bold text-label-bold text-primary hover:text-secondary transition-colors&quot; href=&quot;index.html&quot;>Home</a>
+<a class=&quot;font-label-bold text-label-bold text-primary hover:text-secondary transition-colors&quot; href=&quot;index.html#services&quot;>Services</a>
+<a class=&quot;font-label-bold text-label-bold text-primary hover:text-secondary transition-colors&quot; href=&quot;index.html#about&quot;>About</a>
+<a class=&quot;font-label-bold text-label-bold text-primary hover:text-secondary transition-colors&quot; href=&quot;index.html#reviews&quot;>Reviews</a>
+<a class=&quot;font-label-bold text-label-bold text-primary hover:text-secondary transition-colors&quot; href=&quot;index.html#quote-form&quot;>Free Quote</a>
+<a class=&quot;font-label-bold text-label-bold border border-secondary-container bg-secondary-container text-on-secondary px-3 py-1.5 rounded-lg transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]&quot; href=&quot;#&quot;>Book</a>
+</div>
+<a class=&quot;hidden md:flex items-center gap-2 bg-secondary-container hover:bg-secondary text-on-secondary py-2 px-4 rounded-lg font-label-bold text-label-bold shadow-md hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group&quot; href=&quot;tel:0800427626&quot; style=&quot;background-color: rgb(230, 89, 43);&quot;>
+<span class=&quot;material-symbols-outlined icon-fill&quot;>call</span>CALL US
+        </a>
+<button class=&quot;md:hidden text-primary&quot; id=&quot;mobile-menu-toggle&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;mobile-menu&quot; aria-label=&quot;Open menu&quot;>
+<span class=&quot;material-symbols-outlined text-2xl&quot; id=&quot;mobile-menu-icon&quot;>menu</span>
+</button>
+</div>
+<div class=&quot;hidden md:hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-outline-variant/20&quot; id=&quot;mobile-menu&quot;>
+<div class=&quot;flex flex-col gap-1 px-6 py-4&quot;>
+<a class=&quot;font-label-bold text-label-bold text-primary hover:text-secondary transition-colors py-3 border-b border-outline-variant/20&quot; href=&quot;index.html&quot;>Home</a>
+<a class=&quot;font-label-bold text-label-bold text-primary hover:text-secondary transition-colors py-3 border-b border-outline-variant/20&quot; href=&quot;index.html#services&quot;>Services</a>
+<a class=&quot;font-label-bold text-label-bold text-primary hover:text-secondary transition-colors py-3 border-b border-outline-variant/20&quot; href=&quot;index.html#about&quot;>About</a>
+<a class=&quot;font-label-bold text-label-bold text-primary hover:text-secondary transition-colors py-3 border-b border-outline-variant/20&quot; href=&quot;index.html#reviews&quot;>Reviews</a>
+<a class=&quot;font-label-bold text-label-bold text-primary hover:text-secondary transition-colors py-3 border-b border-outline-variant/20&quot; href=&quot;index.html#quote-form&quot;>Free Quote</a>
+<a class=&quot;font-label-bold text-label-bold border border-secondary-container bg-secondary-container text-on-secondary px-3 py-2.5 rounded-lg transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] text-center mt-2&quot; href=&quot;#&quot;>Book</a>
+<a class=&quot;flex items-center justify-center gap-2 bg-secondary-container hover:bg-secondary text-on-secondary py-2.5 px-4 rounded-lg font-label-bold text-label-bold shadow-md transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] mt-2&quot; href=&quot;tel:0800427626&quot; style=&quot;background-color: rgb(230, 89, 43);&quot;>
+<span class=&quot;material-symbols-outlined icon-fill&quot;>call</span>CALL US
+</a>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero/Header Section -->
+<section class=&quot;w-full pb-12 px-grid-gutter max-w-container-max mx-auto relative overflow-hidden bg-surface-container-low pt-10&quot; style=&quot;max-width: 1100px;&quot;>
+<div class=&quot;relative z-10 max-w-3xl reveal&quot;>
+<div class=&quot;inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full mb-6 transition-transform duration-1000 hover:scale-105 cursor-default hover:shadow-md&quot;>
+<span class=&quot;material-symbols-outlined text-secondary-container text-sm&quot; style=&quot;color: rgb(230, 89, 43);&quot;>bolt</span>
+<span class=&quot;font-label-bold text-label-bold text-primary text-sm uppercase tracking-wider&quot;>Fast Response in Tauranga</span>
+</div>
+<h1 class=&quot;font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-4&quot;>
+                    Book Your Job
+                </h1>
+<p class=&quot;font-body-lg text-body-lg text-on-surface-variant max-w-2xl&quot;>
+                    Need reliable plumbing or gas fitting? Fill out the details below and our team will get back to you swiftly to confirm your appointment.
+                </p>
+</div>
+</section>
+<!-- Form Section -->
+<section class=&quot;w-full pb-section-gap-mobile md:pb-section-gap-desktop px-grid-gutter max-w-container-max mx-auto&quot; style=&quot;max-width: 1100px;&quot;>
+<div class=&quot;grid grid-cols-1 lg:grid-cols-12 gap-12&quot;>
+<!-- Main Form Area -->
+<div class=&quot;lg:col-span-8 reveal&quot; style=&quot;transition-delay: 100ms;&quot;>
+<div class=&quot;bg-surface-container-lowest rounded-xl shadow-[0px_4px_20px_rgba(10,31,68,0.05)] p-6 border-t-4 border-primary relative overflow-hidden transition-all duration-1000 hover:shadow-[0px_12px_40px_rgba(10,31,68,0.12)] md:p-6 hover:-translate-y-1&quot;>
+<form class=&quot;relative z-10 space-y-8&quot; id=&quot;bookingForm&quot;>
+<!-- Contact Details -->
+<div class=&quot;group-focus-within form-section-animate&quot; style=&quot;transition-delay: 200ms;&quot;>
+<h2 class=&quot;font-headline-md text-headline-md text-primary mb-6 flex items-center gap-2 border-b border-surface-container pb-2 transition-colors duration-700&quot;>
+<span class=&quot;material-symbols-outlined text-secondary-container&quot; style=&quot;color: rgb(230, 89, 43);&quot;>person</span>
+                                    Contact Details
+                                </h2>
+<div class=&quot;grid grid-cols-1 md:grid-cols-2 gap-6&quot;>
+<div class=&quot;space-y-2 group&quot;>
+<label class=&quot;block font-label-bold text-label-bold text-primary transition-colors duration-700&quot; for=&quot;fullName&quot;>Full Name *</label>
+<input class=&quot;w-full px-4 bg-surface rounded border border-outline-variant focus:border-secondary-container focus:ring-2 focus:ring-secondary-container/20 transition-all duration-700 font-body-md text-on-surface placeholder-outline hover:border-secondary-container h-10&quot; id=&quot;fullName&quot; name=&quot;fullName&quot; placeholder=&quot;John Doe&quot; required=&quot;&quot; type=&quot;text&quot;/>
+</div>
+<div class=&quot;space-y-2 group&quot;>
+<label class=&quot;block font-label-bold text-label-bold text-primary transition-colors duration-700&quot; for=&quot;phone&quot;>Phone Number *</label>
+<input class=&quot;w-full px-4 bg-surface rounded border border-outline-variant focus:border-secondary-container focus:ring-2 focus:ring-secondary-container/20 transition-all duration-700 font-body-md text-on-surface placeholder-outline hover:border-secondary-container h-10&quot; id=&quot;phone&quot; name=&quot;phone&quot; placeholder=&quot;021 123 4567&quot; required=&quot;&quot; type=&quot;tel&quot;/>
+</div>
+<div class=&quot;space-y-2 md:col-span-2 group&quot;>
+<label class=&quot;block font-label-bold text-label-bold text-primary transition-colors duration-700&quot; for=&quot;email&quot;>Email Address *</label>
+<input class=&quot;w-full px-4 bg-surface rounded border border-outline-variant focus:border-secondary-container focus:ring-2 focus:ring-secondary-container/20 transition-all duration-700 font-body-md text-on-surface placeholder-outline hover:border-secondary-container h-10&quot; id=&quot;email&quot; name=&quot;email&quot; placeholder=&quot;john@example.com&quot; required=&quot;&quot; type=&quot;email&quot;/>
+</div>
+</div>
+</div>
+<!-- Site Address -->
+<div class=&quot;group-focus-within form-section-animate&quot; style=&quot;transition-delay: 300ms;&quot;>
+<h2 class=&quot;font-headline-md text-headline-md text-primary mb-6 flex items-center gap-2 border-b border-surface-container pb-2 transition-colors duration-700&quot;>
+<span class=&quot;material-symbols-outlined text-secondary-container&quot; style=&quot;color: rgb(230, 89, 43);&quot;>location_on</span>
+                                    Site Address
+                                </h2>
+<div class=&quot;grid grid-cols-1 md:grid-cols-2 gap-6&quot;>
+<div class=&quot;space-y-2 md:col-span-2 group&quot;>
+<label class=&quot;block font-label-bold text-label-bold text-primary transition-colors duration-700&quot; for=&quot;street&quot;>Street Address *</label>
+<input class=&quot;w-full px-4 bg-surface rounded border border-outline-variant focus:border-secondary-container focus:ring-2 focus:ring-secondary-container/20 transition-all duration-700 font-body-md text-on-surface placeholder-outline hover:border-secondary-container h-10&quot; id=&quot;street&quot; name=&quot;street&quot; placeholder=&quot;123 Example Street&quot; required=&quot;&quot; type=&quot;text&quot;/>
+</div>
+<div class=&quot;space-y-2 group&quot;>
+<label class=&quot;block font-label-bold text-label-bold text-primary transition-colors duration-700&quot; for=&quot;suburb&quot;>Suburb *</label>
+<select class=&quot;w-full px-4 bg-surface rounded border border-outline-variant focus:border-secondary-container focus:ring-2 focus:ring-secondary-container/20 transition-all duration-700 font-body-md text-on-surface appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2340484c%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:1.25rem_1.25rem] bg-[position:right_1rem_center] bg-no-repeat pr-10 hover:border-secondary-container cursor-pointer h-10&quot; id=&quot;suburb&quot; name=&quot;suburb&quot; required=&quot;&quot;>
+<option disabled=&quot;&quot; selected=&quot;&quot; value=&quot;&quot;>Select Suburb</option>
+<option value=&quot;avenues&quot;>Avenues</option>
+<option value=&quot;bellevue&quot;>Bellevue</option>
+<option value=&quot;bethlehem&quot;>Bethlehem</option>
+<option value=&quot;brookfield&quot;>Brookfield</option>
+<option value=&quot;cambridge_heights&quot;>Cambridge Heights</option>
+<option value=&quot;cherrywood&quot;>Cherrywood</option>
+<option value=&quot;gate_pa&quot;>Gate Pa</option>
+<option value=&quot;greerton&quot;>Greerton</option>
+<option value=&quot;judea&quot;>Judea</option>
+<option value=&quot;matua&quot;>Matua</option>
+<option value=&quot;maungtapu&quot;>Maungtapu</option>
+<option value=&quot;merivale&quot;>Merivale</option>
+<option value=&quot;ohauiti&quot;>Ohauiti</option>
+<option value=&quot;oropi&quot;>Oropi</option>
+<option value=&quot;otumoetai&quot;>Otumoetai</option>
+<option value=&quot;papamoa&quot;>Papamoa</option>
+<option value=&quot;parkvale&quot;>Parkvale</option>
+<option value=&quot;pillans_point&quot;>Pillans Point</option>
+<option value=&quot;poike&quot;>Poike</option>
+<option value=&quot;pyes_pa&quot;>Pyes Pa</option>
+<option value=&quot;the_lakes&quot;>The Lakes</option>
+<option value=&quot;welcome_bay&quot;>Welcome Bay</option>
+<option value=&quot;other&quot;>Other (say in job description)</option>
+</select>
+</div>
+<div class=&quot;space-y-2 group&quot;>
+<label class=&quot;block font-label-bold text-label-bold text-primary transition-colors duration-700&quot; for=&quot;postcode&quot;>Postcode</label>
+<input class=&quot;w-full px-4 bg-surface rounded border border-outline-variant focus:border-secondary-container focus:ring-2 focus:ring-secondary-container/20 transition-all duration-700 font-body-md text-on-surface placeholder-outline hover:border-secondary-container h-10&quot; id=&quot;postcode&quot; name=&quot;postcode&quot; placeholder=&quot;3116&quot; type=&quot;text&quot;/>
+</div>
+</div>
+</div>
+<!-- Job Details -->
+<div class=&quot;group-focus-within form-section-animate&quot; style=&quot;transition-delay: 400ms;&quot;>
+<h2 class=&quot;font-headline-md text-headline-md text-primary mb-6 flex items-center gap-2 border-b border-surface-container pb-2 transition-colors duration-700&quot;>
+<span class=&quot;material-symbols-outlined text-secondary-container&quot; style=&quot;color: rgb(230, 89, 43);&quot;>plumbing</span>
+                                    Job Details
+                                </h2>
+<div class=&quot;grid grid-cols-1 md:grid-cols-2 gap-6&quot;>
+<div class=&quot;space-y-2 group&quot;>
+<label class=&quot;block font-label-bold text-label-bold text-primary transition-colors duration-700&quot; for=&quot;serviceType&quot;>Service Type *</label>
+<select class=&quot;w-full px-4 bg-surface rounded border border-outline-variant focus:border-secondary-container focus:ring-2 focus:ring-secondary-container/20 transition-all duration-700 font-body-md text-on-surface appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2340484c%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:1.25rem_1.25rem] bg-[position:right_1rem_center] bg-no-repeat pr-10 disabled:opacity-50 disabled:cursor-not-allowed hover:border-secondary-container cursor-pointer h-10&quot; disabled=&quot;&quot; id=&quot;serviceType&quot; name=&quot;serviceType&quot; required=&quot;&quot;>
+<option disabled=&quot;&quot; selected=&quot;&quot; value=&quot;&quot;>Select Suburb First</option>
+<option value=&quot;plumbing&quot;>Plumbing</option>
+<option value=&quot;gas_fitting&quot;>Gas Fitting</option>
+<option value=&quot;drainage&quot;>Drainage</option>
+</select>
+</div>
+<div class=&quot;space-y-2 group&quot;>
+<label class=&quot;block font-label-bold text-label-bold text-primary transition-colors duration-700&quot; for=&quot;urgency&quot;>Urgency *</label>
+<select class=&quot;w-full px-4 bg-surface rounded border border-outline-variant focus:border-secondary-container focus:ring-2 focus:ring-secondary-container/20 transition-all duration-700 font-body-md text-on-surface appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2340484c%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:1.25rem_1.25rem] bg-[position:right_1rem_center] bg-no-repeat pr-10 hover:border-secondary-container cursor-pointer h-10&quot; id=&quot;urgency&quot; name=&quot;urgency&quot; required=&quot;&quot;>
+<option disabled=&quot;&quot; selected=&quot;&quot; value=&quot;&quot;>Select Urgency</option>
+<option class=&quot;font-bold text-error&quot; value=&quot;emergency&quot;>Emergency / Same Day</option>
+<option value=&quot;48_hours&quot;>Within 48 Hours</option>
+<option value=&quot;non_urgent&quot;>Non-Urgent / Booking for Later</option>
+</select>
+</div>
+<div class=&quot;space-y-2 group&quot;>
+<label class=&quot;block font-label-bold text-label-bold text-primary transition-colors duration-700&quot; for=&quot;date&quot;>Preferred Date</label>
+<input class=&quot;w-full px-4 bg-surface rounded border border-outline-variant focus:border-secondary-container focus:ring-2 focus:ring-secondary-container/20 transition-all duration-700 font-body-md text-on-surface hover:border-secondary-container cursor-pointer h-10&quot; id=&quot;date&quot; name=&quot;date&quot; type=&quot;date&quot;/>
+</div>
+<div class=&quot;space-y-2 group&quot;>
+<label class=&quot;block font-label-bold text-label-bold text-primary transition-colors duration-700&quot; for=&quot;time&quot;>Preferred Time</label>
+<select class=&quot;w-full px-4 bg-surface rounded border border-outline-variant focus:border-secondary-container focus:ring-2 focus:ring-secondary-container/20 transition-all duration-700 font-body-md text-on-surface appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2340484c%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E')] bg-[length:1.25rem_1.25rem] bg-[position:right_1rem_center] bg-no-repeat pr-10 hover:border-secondary-container cursor-pointer h-10&quot; id=&quot;time&quot; name=&quot;time&quot;>
+<option disabled=&quot;&quot; selected=&quot;&quot; value=&quot;&quot;>Any Time</option>
+<option value=&quot;morning&quot;>Morning (8am - 12pm)</option>
+<option value=&quot;afternoon&quot;>Afternoon (12pm - 5pm)</option>
+</select>
+</div>
+<div class=&quot;space-y-2 md:col-span-2 group&quot;>
+<label class=&quot;block font-label-bold text-label-bold text-primary transition-colors duration-700&quot; for=&quot;description&quot;>Job Description *</label>
+<textarea class=&quot;w-full p-4 bg-surface rounded border border-outline-variant focus:border-secondary-container focus:ring-2 focus:ring-secondary-container/20 transition-all duration-700 font-body-md text-on-surface placeholder-outline resize-y hover:border-secondary-container&quot; id=&quot;description&quot; name=&quot;description&quot; placeholder=&quot;Please provide details about the issue or work required...&quot; required=&quot;&quot; rows=&quot;4&quot;></textarea>
+</div>
+<!-- Photo Upload Area -->
+<div class=&quot;space-y-2 md:col-span-2 mt-2&quot;>
+<label class=&quot;block font-label-bold text-label-bold text-primary mb-2&quot;>Photos (Optional but helpful)</label>
+<div class=&quot;border-2 border-dashed border-outline-variant rounded p-8 text-center bg-surface hover:bg-surface-container-low transition-all duration-700 hover:border-secondary-container cursor-pointer group&quot; id=&quot;dropZone&quot;>
+<div class=&quot;flex flex-col items-center justify-center space-y-3&quot;>
+<div class=&quot;w-12 h-12 rounded-full bg-surface-container flex items-center justify-center group-hover:bg-primary-container group-hover:text-on-primary transition-colors duration-700 group-hover:scale-110 transform&quot;>
+<span class=&quot;material-symbols-outlined text-2xl text-on-surface-variant group-hover:text-on-primary transition-colors duration-700&quot;>add_a_photo</span>
+</div>
+<div class=&quot;text-sm&quot;>
+<span class=&quot;font-label-bold text-primary underline underline-offset-2 transition-colors duration-700 group-hover:text-secondary-container&quot;>Click to upload</span>
+<span class=&quot;text-on-surface-variant transition-colors duration-700&quot; id=&quot;uploadStatus&quot;> or drag and drop</span>
+</div>
+<p class=&quot;text-xs text-outline transition-colors duration-700 group-hover:text-on-surface-variant&quot;>JPG, PNG up to 5MB</p>
+</div>
+<input accept=&quot;image/*&quot; class=&quot;hidden h-10&quot; id=&quot;photoUpload&quot; multiple=&quot;&quot; type=&quot;file&quot;/>
+</div>
+</div>
+</div>
+</div>
+<!-- Submit Area -->
+<div class=&quot;pt-6 border-t border-surface-container mt-8 form-section-animate&quot; style=&quot;transition-delay: 500ms;&quot;>
+<div class=&quot;flex flex-col md:flex-row items-center justify-between gap-6&quot;>
+<div class=&quot;flex items-center gap-3 text-sm text-on-surface-variant&quot;>
+<span class=&quot;material-symbols-outlined text-secondary-container&quot; style=&quot;color: rgb(230, 89, 43);&quot;>schedule</span>
+<p class=&quot;&quot;>We will contact you as soon as possible to confirm your slot.</p>
+</div>
+<button class=&quot;w-full md:w-auto bg-secondary-container hover:brightness-95 text-on-secondary py-4 px-8 rounded font-label-bold text-label-bold shadow-md hover:shadow-[0_0_20px_rgba(230,89,43,0.4)] transition-all duration-1000 transform hover:-translate-y-1 hover:scale-[1.02] active:scale-[0.98] active:translate-y-0 flex items-center justify-center gap-2 group&quot; style=&quot;background-color: rgb(230, 89, 43);&quot; type=&quot;submit&quot;>
+                                        Confirm Booking
+                                        <span class=&quot;material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform&quot;>arrow_forward</span>
+</button>
+</div>
+</div>
+</form>
+<div class=&quot;hidden text-center py-6 md:py-10&quot; id=&quot;bookingFormSuccess&quot;>
+<div class=&quot;w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-on-tertiary&quot; style=&quot;background-color: rgb(230, 89, 43);&quot;>
+<span class=&quot;material-symbols-outlined text-4xl&quot;>check_circle</span>
+</div>
+<h2 class=&quot;font-headline-md text-headline-md text-primary mb-3&quot;>Booking Request Received!</h2>
+<p class=&quot;font-body-md text-body-md text-on-surface-variant max-w-md mx-auto mb-2&quot;>Thanks — we've got your job details and will contact you shortly to confirm your appointment.</p>
+<p class=&quot;font-body-md text-body-md text-on-surface-variant max-w-md mx-auto mb-8&quot;>If it's urgent, call us any time on <a class=&quot;font-label-bold text-secondary-container hover:text-secondary transition-colors&quot; href=&quot;tel:0800427626&quot;>0800 GAS MAN</a>.</p>
+<button class=&quot;font-label-bold text-label-bold border border-primary/30 text-primary hover:bg-primary hover:text-on-primary px-6 py-3 rounded transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]&quot; id=&quot;bookingFormReset&quot; type=&quot;button&quot;>Book Another Job</button>
+</div>
+</div>
+</div>
+<!-- Sidebar / Trust Signals -->
+<div class=&quot;lg:col-span-4 space-y-8&quot;>
+<!-- Contact Card -->
+<div class=&quot;bg-primary-container rounded-xl p-6 shadow-md text-on-primary relative overflow-hidden reveal transition-all duration-1000 hover:-translate-y-2 hover:shadow-xl group&quot; style=&quot;transition-delay: 200ms;&quot;>
+<div class=&quot;absolute -bottom-8 -right-8 opacity-10 transition-transform duration-[1400ms] group-hover:scale-110 group-hover:rotate-12&quot;>
+<span class=&quot;material-symbols-outlined text-9xl&quot;>support_agent</span>
+</div>
+<h3 class=&quot;font-headline-md text-headline-md mb-4 relative z-10 text-on-primary&quot;>Need the Gasman?</h3>
+<p class=&quot;font-body-md text-on-primary-container mb-6 relative z-10 text-inverse-primary&quot;>If you need the gasman at this moment, do not hesitate to call our freephone below</p>
+<a class=&quot;inline-flex items-center gap-2 font-headline-md text-xl font-bold text-secondary-fixed hover:text-white transition-colors relative z-10 animate-pulse-slow hover:animate-none&quot; href=&quot;tel:0800427626&quot;>
+<span class=&quot;material-symbols-outlined icon-fill transition-transform hover:scale-110&quot;>call</span>
+                            0800 GAS MAN
+                        </a>
+</div>
+<!-- Trust Signals -->
+<div class=&quot;bg-surface-container-lowest rounded-xl p-6 shadow-[0px_4px_20px_rgba(10,31,68,0.05)] border border-surface-container reveal transition-all duration-1000 hover:-translate-y-2 hover:shadow-xl&quot; style=&quot;transition-delay: 300ms;&quot;>
+<h3 class=&quot;font-label-bold text-label-bold text-primary uppercase tracking-wider mb-6 text-sm&quot;>Why Choose Us</h3>
+<ul class=&quot;space-y-6&quot;>
+<li class=&quot;flex items-start gap-4 group cursor-default&quot;>
+<div class=&quot;w-10 h-10 rounded-full bg-secondary-container/10 flex items-center justify-center shrink-0 transition-all duration-1000 group-hover:scale-110 group-hover:bg-secondary-container/20 group-hover:rotate-6&quot;>
+<span class=&quot;material-symbols-outlined text-secondary-container&quot; style=&quot;color: rgb(230, 89, 43);&quot;>verified</span>
+</div>
+<div>
+<h4 class=&quot;font-label-bold text-primary mb-1 transition-colors duration-700 group-hover:text-secondary-container&quot;>Licensed Professionals</h4>
+<p class=&quot;text-sm text-on-surface-variant&quot;>Fully certified plumbers and gas fitters.</p>
+</div>
+</li>
+<li class=&quot;flex items-start gap-4 group cursor-default&quot;>
+<div class=&quot;w-10 h-10 rounded-full bg-secondary-container/10 flex items-center justify-center shrink-0 transition-all duration-1000 group-hover:scale-110 group-hover:bg-secondary-container/20 group-hover:rotate-6&quot;>
+<span class=&quot;material-symbols-outlined text-secondary-container&quot; style=&quot;color: rgb(230, 89, 43);&quot;>star</span>
+</div>
+<div>
+<h4 class=&quot;font-label-bold text-primary mb-1 transition-colors duration-700 group-hover:text-secondary-container&quot;>Top Rated Service</h4>
+<p class=&quot;text-sm text-on-surface-variant flex items-center gap-1&quot;>
+<span class=&quot;text-secondary-container font-bold&quot; style=&quot;color: #E6592B;&quot;>4.4</span>
+<span class=&quot;text-outline&quot;>/ 5 on Google Reviews</span>
+</p>
+</div>
+</li>
+<li class=&quot;flex items-start gap-4 group cursor-default&quot;>
+<div class=&quot;w-10 h-10 rounded-full bg-secondary-container/10 flex items-center justify-center shrink-0 transition-all duration-1000 group-hover:scale-110 group-hover:bg-secondary-container/20 group-hover:rotate-6&quot;>
+<span class=&quot;material-symbols-outlined text-secondary-container&quot; style=&quot;color: rgb(230, 89, 43);&quot;>local_shipping</span>
+</div>
+<div>
+<h4 class=&quot;font-label-bold text-primary mb-1 transition-colors duration-700 group-hover:text-secondary-container&quot;>Local &amp;amp; Fast</h4>
+<p class=&quot;text-sm text-on-surface-variant&quot;>Locally owned, servicing Tauranga wide.</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- Image Block -->
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class=&quot;bg-primary w-full py-section-gap-mobile md:py-section-gap-desktop px-grid-gutter max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-on-primary&quot; style=&quot;max-width: 1100px;&quot;>
+<div class=&quot;col-span-1 md:col-span-2 lg:col-span-1&quot;>
+<div class=&quot;font-headline-md text-headline-md font-bold text-on-primary mb-4&quot;>
+                Steve's Plumbing &amp;amp; Gas
+            </div>
+<p class=&quot;font-body-md text-body-md mb-6 opacity-80&quot;>
+                Professional, reliable plumbing and gas fitting services across Tauranga and Mount Maunganui.
+            </p>
+<p class=&quot;font-body-md text-body-md text-sm opacity-60&quot;>
+                © 2024 Steve's Plumbing &amp;amp; Gas. All rights reserved.
+            </p>
+</div>
+<div>
+<h4 class=&quot;font-label-bold text-label-bold mb-4 opacity-50 uppercase tracking-wider&quot;>Services</h4>
+<ul class=&quot;space-y-3 font-body-md text-body-md&quot;>
+<li class=&quot;&quot;><a class=&quot;hover:text-secondary-fixed transition-colors nav-link&quot; href=&quot;index.html#services&quot;>Plumbing</a></li>
+<li class=&quot;&quot;><a class=&quot;hover:text-secondary-fixed transition-colors nav-link&quot; href=&quot;index.html#services&quot;>Gas Fitting</a></li>
+<li class=&quot;&quot;><a class=&quot;hover:text-secondary-fixed transition-colors nav-link&quot; href=&quot;index.html#services&quot;>Drainage</a></li>
+<li class=&quot;&quot;><a class=&quot;font-bold hover:text-secondary-fixed transition-colors&quot; href=&quot;index.html#gasman&quot;>0800 GASMAN</a></li>
+</ul>
+</div>
+<div>
+<h4 class=&quot;font-label-bold text-label-bold mb-4 opacity-50 uppercase tracking-wider&quot;>Company</h4>
+<ul class=&quot;space-y-3 font-body-md text-body-md&quot;>
+<li class=&quot;&quot;><a class=&quot;hover:text-secondary-fixed transition-colors nav-link&quot; href=&quot;index.html#about&quot;>About Us</a></li>
+<li class=&quot;&quot;><a class=&quot;hover:text-secondary-fixed transition-colors nav-link&quot; href=&quot;index.html#reviews&quot;>Reviews</a></li>
+<li class=&quot;&quot;><a class=&quot;hover:text-secondary-fixed transition-colors nav-link&quot; href=&quot;index.html#quote-form&quot;>Get a Quote</a></li>
+</ul>
+</div>
+<div>
+<h4 class=&quot;font-label-bold text-label-bold mb-4 opacity-50 uppercase tracking-wider&quot;>Contact</h4>
+<ul class=&quot;space-y-3 font-body-md text-body-md&quot;>
+<li class=&quot;flex items-center gap-2 group&quot;>
+<span class=&quot;material-symbols-outlined text-sm transition-transform group-hover:scale-110&quot;>call</span>
+<a class=&quot;hover:text-secondary-fixed transition-colors&quot; href=&quot;tel:0800427626&quot;>07 571 5553</a>
+</li>
+<li class=&quot;flex items-center gap-2 group&quot;>
+<span class=&quot;material-symbols-outlined text-sm transition-transform group-hover:scale-110&quot;>mail</span>
+<a class=&quot;hover:text-secondary-fixed transition-colors&quot; href=&quot;mailto:info@0800gasman.co.nz&quot;>info@0800gasman.co.nz</a>
+</li>
+<li class=&quot;flex items-start gap-2 mt-4 group&quot;>
+<span class=&quot;material-symbols-outlined text-sm mt-1 transition-transform group-hover:scale-110&quot;>location_on</span>
+<a class=&quot;font-label-bold opacity-90 hover:opacity-100 hover:text-secondary-fixed hover:underline transition-all&quot; href=&quot;https://www.google.com/maps/search/?api=1&amp;amp;query=9+Oak+Lane,+Judea,+Tauranga+3110,+New+Zealand&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;>9 Oak Lane, Judea, Tauranga 3110, New Zealand</a>
+</li>
+</ul>
+</div>
+</footer>
+<!-- Sticky Mobile CTA -->
+<div class=&quot;md:hidden fixed bottom-0 left-0 w-full p-4 bg-surface border-t border-surface-container shadow-[0px_-4px_20px_rgba(10,31,68,0.1)] z-50&quot;>
+<a class=&quot;w-full flex items-center justify-center gap-2 bg-secondary-container text-on-secondary py-3 px-6 rounded font-label-bold text-lg shadow-md active:brightness-90 transition-colors&quot; href=&quot;tel:0800427626&quot; style=&quot;background-color: #E6592B;&quot;>
+<span class=&quot;material-symbols-outlined icon-fill&quot;>call</span>
+            Call 0800 GAS MAN
+        </a>
+</div>
+<div id=&quot;copy-toast&quot; class=&quot;fixed left-1/2 bottom-6 -translate-x-1/2 bg-primary text-on-primary text-sm font-label-bold px-4 py-2.5 rounded-lg shadow-lg opacity-0 pointer-events-none transition-opacity duration-300 z-[100]&quot; role=&quot;status&quot; aria-live=&quot;polite&quot;></div>
+<script>
+        // Suburb and Service Logic
+        (function() {
+            const suburbSelect = document.getElementById('suburb');
+            const serviceSelect = document.getElementById('serviceType');
+            
+            const allServices = [
+                { value: 'plumbing', text: 'Plumbing' },
+                { value: 'gas_fitting', text: 'Gas Fitting' },
+                { value: 'drainage', text: 'Drainage' }
+            ];
+
+            suburbSelect.addEventListener('change', function() {
+                const selectedSuburb = this.value;
+                
+                if (!selectedSuburb) {
+                    serviceSelect.disabled = true;
+                    serviceSelect.innerHTML = '<option disabled selected value=&quot;&quot;>Select Suburb First</option>';
+                    return;
+                }
+
+                serviceSelect.disabled = false;
+                serviceSelect.innerHTML = '<option disabled selected value=&quot;&quot;>Select Service</option>';
+                
+                if (selectedSuburb === 'other') {
+                    allServices.forEach(service => {
+                        if (service.value === 'plumbing' || service.value === 'gas_fitting') {
+                            const opt = document.createElement('option');
+                            opt.value = service.value;
+                            opt.textContent = service.text;
+                            serviceSelect.appendChild(opt);
+                        }
+                    });
+                } else {
+                    allServices.forEach(service => {
+                        const opt = document.createElement('option');
+                        opt.value = service.value;
+                        opt.textContent = service.text;
+                        serviceSelect.appendChild(opt);
+                    });
+                }
+            });
+        })();
+
+        // File upload logic
+        (function() {
+            const fileInput = document.getElementById('photoUpload');
+            const dropZone = document.getElementById('dropZone');
+            const uploadStatus = document.getElementById('uploadStatus');
+
+            if(dropZone &amp;&amp; fileInput) {
+                ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+                    dropZone.addEventListener(eventName, e => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                    }, false);
+                });
+
+                ['dragenter', 'dragover'].forEach(eventName => {
+                    dropZone.addEventListener(eventName, () => {
+                        dropZone.classList.add('bg-surface-container-low', 'border-secondary-container');
+                    }, false);
+                });
+
+                ['dragleave', 'drop'].forEach(eventName => {
+                    dropZone.addEventListener(eventName, () => {
+                        dropZone.classList.remove('bg-surface-container-low', 'border-secondary-container');
+                    }, false);
+                });
+
+                dropZone.addEventListener('drop', e => {
+                    const files = e.dataTransfer.files;
+                    handleFiles(files);
+                }, false);
+
+                dropZone.addEventListener('click', () => fileInput.click());
+
+                fileInput.addEventListener('change', function() {
+                    handleFiles(this.files);
+                });
+
+                function handleFiles(files) {
+                    if(files.length > 0) {
+                        uploadStatus.textContent = ` - ${files.length} file(s) selected`;
+                    }
+                }
+            }
+        })();
+
+        // Reveal Animation Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const reveals = document.querySelectorAll('.reveal');
+            const formSections = document.querySelectorAll('.form-section-animate');
+            
+            const revealOptions = {
+                threshold: 0.1,
+                rootMargin: &quot;0px 0px -50px 0px&quot;
+            };
+
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) return;
+                    
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                });
+            }, revealOptions);
+
+            reveals.forEach(reveal => {
+                revealObserver.observe(reveal);
+            });
+            
+            formSections.forEach(section => {
+                revealObserver.observe(section);
+            });
+
+            // Booking form: there's no backend wired up yet (see LEIA-ME.txt), so a
+            // real submit would just reload/navigate and land on a blank page. We stop
+            // that, run the browser's own validation, and only then swap the form for a
+            // clear success message -- never the other way around.
+            (function () {
+                const form = document.getElementById('bookingForm');
+                const success = document.getElementById('bookingFormSuccess');
+                const resetBtn = document.getElementById('bookingFormReset');
+                const serviceSelect = document.getElementById('serviceType');
+                const uploadStatusEl = document.getElementById('uploadStatus');
+                if (!form || !success) return;
+
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    if (!form.checkValidity()) {
+                        form.reportValidity();
+                        return;
+                    }
+                    form.classList.add('hidden');
+                    success.classList.remove('hidden');
+                    success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                });
+
+                if (resetBtn) {
+                    resetBtn.addEventListener('click', function () {
+                        form.reset();
+                        // form.reset() restores field values but not the suburb ->
+                        // service cascade, so put that back to its starting state too.
+                        if (serviceSelect) {
+                            serviceSelect.disabled = true;
+                            serviceSelect.innerHTML = '<option disabled selected value=&quot;&quot;>Select Suburb First</option>';
+                        }
+                        if (uploadStatusEl) uploadStatusEl.textContent = ' or drag and drop';
+                        success.classList.add('hidden');
+                        form.classList.remove('hidden');
+                        form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    });
+                }
+            })();
+
+            // Mobile hamburger menu: opens the same links the desktop nav has.
+            (function () {
+                const toggle = document.getElementById('mobile-menu-toggle');
+                const menu = document.getElementById('mobile-menu');
+                const icon = document.getElementById('mobile-menu-icon');
+                if (!toggle || !menu) return;
+
+                function closeMenu() {
+                    menu.classList.add('hidden');
+                    toggle.setAttribute('aria-expanded', 'false');
+                    if (icon) icon.textContent = 'menu';
+                }
+                function openMenu() {
+                    menu.classList.remove('hidden');
+                    toggle.setAttribute('aria-expanded', 'true');
+                    if (icon) icon.textContent = 'close';
+                }
+
+                toggle.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    if (menu.classList.contains('hidden')) openMenu(); else closeMenu();
+                });
+
+                menu.querySelectorAll('a').forEach(function (a) {
+                    a.addEventListener('click', closeMenu);
+                });
+
+                document.addEventListener('click', function (e) {
+                    if (!menu.classList.contains('hidden') &amp;&amp; !menu.contains(e.target) &amp;&amp; e.target !== toggle &amp;&amp; !toggle.contains(e.target)) {
+                        closeMenu();
+                    }
+                });
+
+                window.addEventListener('resize', function () {
+                    if (window.innerWidth >= 768) closeMenu();
+                });
+            })();
+
+            // Phone / email buttons: on a real phone, &quot;tel:&quot; links should just open the
+            // dialer as normal. On a computer there's nothing to dial, so we copy the
+            // number instead -- and email addresses are always copied, on any device.
+            (function () {
+                function isMobileDevice() {
+                    var ua = navigator.userAgent || '';
+                    if (/Android|iPhone|iPad|iPod|Windows Phone|Mobile/i.test(ua)) return true;
+                    if (window.matchMedia &amp;&amp; window.matchMedia('(pointer: coarse)').matches) return true;
+                    return false;
+                }
+
+                function copyText(text) {
+                    function fallback() {
+                        return new Promise(function (resolve, reject) {
+                            try {
+                                var ta = document.createElement('textarea');
+                                ta.value = text;
+                                ta.setAttribute('readonly', '');
+                                ta.style.position = 'fixed';
+                                ta.style.top = '-1000px';
+                                ta.style.opacity = '0';
+                                document.body.appendChild(ta);
+                                ta.focus();
+                                ta.select();
+                                var ok = document.execCommand('copy');
+                                document.body.removeChild(ta);
+                                if (ok) resolve(); else reject(new Error('execCommand failed'));
+                            } catch (err) {
+                                reject(err);
+                            }
+                        });
+                    }
+                    if (navigator.clipboard &amp;&amp; navigator.clipboard.writeText) {
+                        return navigator.clipboard.writeText(text).catch(fallback);
+                    }
+                    return fallback();
+                }
+
+                var toast = document.getElementById('copy-toast');
+                function showToast(msg) {
+                    if (!toast) return;
+                    toast.textContent = msg;
+                    toast.classList.remove('opacity-0');
+                    toast.classList.add('opacity-100');
+                    clearTimeout(toast._hideTimer);
+                    toast._hideTimer = setTimeout(function () {
+                        toast.classList.remove('opacity-100');
+                        toast.classList.add('opacity-0');
+                    }, 1800);
+                }
+
+                document.querySelectorAll('a[href^=&quot;tel:&quot;]').forEach(function (a) {
+                    a.addEventListener('click', function (e) {
+                        if (isMobileDevice()) return; // let the phone open its dialer normally
+                        e.preventDefault();
+                        var number = a.getAttribute('href').replace('tel:', '');
+                        copyText(number).then(function () {
+                            showToast('Number copied: ' + number);
+                        });
+                    });
+                });
+
+                document.querySelectorAll('a[href^=&quot;mailto:&quot;]').forEach(function (a) {
+                    a.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        var email = a.getAttribute('href').replace('mailto:', '').split('?')[0];
+                        copyText(email).then(function () {
+                            showToast('Email copied: ' + email);
+                        });
+                    });
+                });
+            })();
+        });
+    </script>
+
+<script>
+(function(){
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a');
+    if(!a) return;
+    var href = a.getAttribute('href');
+    if(!href) return;
+    if(href === 'book-a-job.html' || href.indexOf('book-a-job.html#') === 0){
+      e.preventDefault();
+      var hash = href.split('#')[1] || null;
+      parent.postMessage({type:'nav', file:'book-a-job.html', hash: hash}, '*');
+    } else if(href === 'index.html' || href.indexOf('index.html#') === 0){
+      e.preventDefault();
+      var hash = href.split('#')[1] || null;
+      parent.postMessage({type:'nav', file:'index.html', hash: hash}, '*');
+    } else if(href.indexOf('#') === 0){
+      // Pure same-page fragment link (e.g. &quot;#services&quot;). Handle it locally instead of
+      // letting the browser resolve it, because a srcdoc iframe's default base URL is
+      // the PARENT document's URL, not this document -- following it natively would
+      // navigate this iframe away from its srcdoc content.
+      e.preventDefault();
+      if(href.length > 1){
+        var target = document.getElementById(href.slice(1));
+        if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+      }
+    }
+  });
+  window.addEventListener('message', function(e){
+    if(!e.data || e.data.type !== 'scrollTo') return;
+    var behavior = e.data.instant ? 'instant' : 'smooth';
+    if(e.data.hash){
+      var el = document.getElementById(e.data.hash);
+      if(el) el.scrollIntoView({behavior: behavior, block:'start'});
+    } else {
+      window.scrollTo({top:0, behavior: behavior});
+    }
+  });
+})();
+</script>
+</body></html>"></iframe>
+</div>
+<script>
+(function(){
+  var frames = { 'index.html': document.getElementById('frame-home'), 'book-a-job.html': document.getElementById('frame-book') };
+  var current = 'index.html';
+  window.addEventListener('message', function(e){
+    var data = e.data;
+    if(!data || data.type !== 'nav') return;
+    var target = frames[data.file];
+    if(!target) return;
+
+    if(data.file === current){
+      // Already on this page: just relay the scroll request.
+      target.contentWindow.postMessage({type:'scrollTo', hash: data.hash}, '*');
+      return;
+    }
+    current = data.file;
+
+    // Send the scroll target into the incoming page before it fades in,
+    // so it is already in place the moment it becomes visible.
+    target.contentWindow.postMessage({type:'scrollTo', hash: data.hash, instant:true}, '*');
+
+    Object.keys(frames).forEach(function(k){ frames[k].classList.remove('active'); });
+    requestAnimationFrame(function(){
+      target.classList.add('active');
+    });
+  });
+})();
+</script>
+</body>
+</html>
